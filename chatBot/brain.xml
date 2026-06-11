@@ -280,6 +280,37 @@
 
 </topic>
 
+#Sobremesas ---------------------------------------------------------------------------------------------------------------------------------------------
+<category>
+    <pattern>GOSTARIA DE FAZER UMA SOBREMESA</pattern>
+    <template>
+        QUAL TIPO DE SOBREMESSA VOCÊ DESEJA?
+        <think>
+            <set name="topic">SOBREMESAS</set>
+        </think>
+    </template>
+</category>
+
+<topic name="SOBREMESAS">
+
+    <category>
+        <pattern>PUDIM</pattern>
+        <template>
+            RECEITA 1:
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>SORVETE</pattern>
+        <template>
+            RECEITA:
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+</topic>
+
 #Error
 <category>
     <pattern> * </pattern>

@@ -1,4 +1,9 @@
 import sys
+import time
+
+if not hasattr(time, "clock"):
+    time.clock = time.perf_counter
+
 import aiml
 import unicodedata
 import re
@@ -9,18 +14,19 @@ def filter(text):
     # Normaliza o texto entrado como parâmetro e remove os acentos
     text = unicodedata.normalize("NFKD", text) \
         .encode("ASCII", "ignore") \
-        .decode("utf-8")  # fmt: skip
+        .decode("utf-8")
     # Remove pontuação e caracteres especiais
     text = re.sub(r"[^\w\s]", "", text)
     return text
 
 
-kb = sys.argv[1]  # Pega a base AIML entrada por parâmetro
-k = aiml.Kernel()  # Inicializa o motor de interpretação AIML
-k.learn(kb)  # Insere a base AIML no motor para aprendizado
-while True:  # Executa o laço indefinidamente
-    message = input("> ")  # Inicializa o prompt do chatbot
-    message = filter(message)  # Limpa a mensagem entrada pelo usuário
-    response = k.respond(message)  # Envia ao motor e retorna a resposta
-    response = response.replace('\n', '\n') #Realiza a quebra de linha
-    print(response)  # Imprime a resposta
+kb = sys.argv[1]
+k = aiml.Kernel()
+k.learn(kb)
+
+while True:
+    message = input("> ")
+    message = filter(message)
+    response = k.respond(message)
+    response = response.replace('\n', '\n')
+    print(response)
