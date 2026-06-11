@@ -280,6 +280,309 @@
 
 </topic>
 
+#Cachorro Quente ---------------------------------------------------------------------------------------------------------------------------------------------
+<category>
+    <pattern>GOSTARIA DE FAZER UM Cachorro Quente</pattern>
+    <template>
+        QUAL TIPO DE Cachorro Quente VOCÊ DESEJA?
+        <think>
+            <set name="topic">Cachorro Quente</set>
+        </think>
+    </template>
+</category>
+
+<topic name="Cachorro Quente">
+
+    <category>
+        <pattern>Com batata palha em cima</pattern>
+        <template>
+            RECEITA de \n
+            -------1\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Com duas salsichas</pattern>
+        <template>
+            RECEITA de \n
+            -------2\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Com salsichas vegatarianas</pattern>
+        <template>
+            RECEITA de \n
+            -------2\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Com ervilha</pattern>
+        <template>
+            RECEITA de \n
+            -------2\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Com pepino</pattern>
+        <template>
+            RECEITA de \n
+            -------2\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Com batata doce</pattern>
+        <template>
+            RECEITA de \n
+            -------2\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+</topic>
+
+#Macarão ---------------------------------------------------------------------------------------------------------------------------------------------
+<category>
+    <pattern>GOSTARIA DE FAZER UM Macarão</pattern>
+    <template>
+        QUAL TIPO DE Macarão VOCÊ DESEJA?
+        <think>
+            <set name="topic">Macarão</set>
+        </think>
+    </template>
+</category>
+
+<topic name="Macarão">
+
+    <category>
+        <pattern>abolonheza</pattern>
+        <template>
+            RECEITA de \n
+            -------1\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Com almondegas</pattern>
+        <template>
+            RECEITA de \n
+            -------2\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Com carne</pattern>
+        <template>
+            RECEITA de \n
+            -------2\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>alho e oleo</pattern>
+        <template>
+            RECEITA de \n
+            -------2\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>carne e almondegas</pattern>
+        <template>
+            RECEITA de \n
+            -------2\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>com legumes</pattern>
+        <template>
+            RECEITA de \n
+            -------2\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+</topic>
+
+# Frango ---------------------------------------------------------------------------------------------------------------------------------------------
+<category>
+    <pattern>GOSTARIA DE FAZER UM Frango</pattern>
+    <template>
+        QUAL TIPO DE Frango VOCÊ DESEJA?
+        <think>
+            <set name="topic">Frango</set>
+        </think>
+    </template>
+</category>
+
+<topic name="Frango">
+
+    <category>
+        <pattern>Frango PLUS</pattern>
+        <template>
+            RECEITA 1:\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Frango amilaneza</pattern>
+        <template>
+            RECEITA de \n
+            -------3\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>frango frito</pattern>
+        <template>
+            RECEITA:\n
+            ---4\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+</topic>
+
+#Empada ---------------------------------------------------------------------------------------------------------------------------------------------
+<category>
+    <pattern>GOSTARIA DE FAZER UM Empada</pattern>
+    <template>
+        QUAL TIPO DE Empada VOCÊ DESEJA?
+        <think>
+            <set name="topic">Empada</set>
+        </think>
+    </template>
+</category>
+
+<topic name="Empada">
+
+    <category>
+        <pattern>Empada PLUS</pattern>
+        <template>
+            RECEITA 1:\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Empada com CALABREZA</pattern>
+        <template>
+            RECEITA de \n
+            -------3\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Empada com peperone</pattern>
+        <template>
+            RECEITA:\n
+            ---4\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+</topic>
+
+# Porco ---------------------------------------------------------------------------------------------------------------------------------------------
+<category>
+    <pattern>GOSTARIA DE FAZER UM Porco</pattern>
+    <template>
+        QUAL TIPO DE Porco VOCÊ DESEJA?
+        <think>
+            <set name="topic">Porco</set>
+        </think>
+    </template>
+</category>
+
+<topic name="Porco">
+
+    <category>
+        <pattern>Porco PLUS</pattern>
+        <template>
+            RECEITA 1:\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Porco com Bacon</pattern>
+        <template>
+            RECEITA de \n
+            -------3\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Porco com batatas</pattern>
+        <template>
+            RECEITA:\n
+            ---4\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+</topic>
+
+
+# VEGETARIANO ---------------------------------------------------------------------------------------------------------------------------------------------
+<category>
+    <pattern>GOSTARIA DE FAZER UMA Comida Vegetariana</pattern>
+    <template>
+        QUAL TIPO DE Comida Vegetariana VOCÊ DESEJA?
+        <think>
+            <set name="topic">Vegetariana</set>
+        </think>
+    </template>
+</category>
+
+<topic name="Vegetariana">
+
+    <category>
+        <pattern>Salada PLUS</pattern>
+        <template>
+            RECEITA 1:\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Salada de fruta</pattern>
+        <template>
+            RECEITA de \n
+            -------3\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Salada com sazon</pattern>
+        <template>
+            RECEITA:\n
+            ---4\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+</topic>
+
 #Sobremesas ---------------------------------------------------------------------------------------------------------------------------------------------
 <category>
     <pattern>GOSTARIA DE FAZER UMA SOBREMESA</pattern>
@@ -302,9 +605,19 @@
     </category>
 
     <category>
+        <pattern>brownie</pattern>
+        <template>
+            RECEITA de \n
+            -------3\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
         <pattern>SORVETE</pattern>
         <template>
             RECEITA:\n
+            ---4\n
             \nDESEJA VER OUTRA RECEITA?
         </template>
     </category>
