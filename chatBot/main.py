@@ -28,5 +28,5 @@ while True:
     message = input("> ")
     message = filter(message)
     response = k.respond(message)
-    response = response.replace('\n', '\n')
+    response = response.replace('\\n', '\n')
     print(response)

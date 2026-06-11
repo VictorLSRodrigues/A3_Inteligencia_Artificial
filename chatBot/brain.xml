@@ -296,7 +296,7 @@
     <category>
         <pattern>PUDIM</pattern>
         <template>
-            RECEITA 1:
+            RECEITA 1:\n
             \nDESEJA VER OUTRA RECEITA?
         </template>
     </category>
@@ -304,7 +304,7 @@
     <category>
         <pattern>SORVETE</pattern>
         <template>
-            RECEITA:
+            RECEITA:\n
             \nDESEJA VER OUTRA RECEITA?
         </template>
     </category>
