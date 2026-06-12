@@ -112,6 +112,8 @@
     <pattern>GOSTARIA DE FAZER UM OVO</pattern>
     <template>
         QUAL TIPO DE OVO VOCÊ DESEJA?
+        - MEXIDO\n 
+        - COZIDO\n 
         <think>
             <set name="topic">OVO</set>
         </think>
@@ -152,6 +154,8 @@
     <pattern>GOSTARIA DE FAZER UM PIZZA</pattern>
     <template>
         QUAL TIPO DE PIZZA VOCÊ DESEJA?
+        - CALABREZA\n 
+        - frango com CATUPIRY\n 
         <think>
             <set name="topic">PIZZA</set>
         </think>
@@ -197,6 +201,8 @@
     <pattern>GOSTARIA DE FAZER UMA COXINHA</pattern>
     <template>
         QUAL TIPO DE COXINHA VOCÊ DESEJA?
+        - 4 QUEIJOS\n 
+        - camarão\n
         <think>
             <set name="topic">COXINHA</set>
         </think>
@@ -241,6 +247,8 @@
     <pattern>GOSTARIA DE FAZER UM BOLINHO DE ARROZ</pattern>
     <template>
         QUAL TIPO DE BOLINHO DE ARROZ VOCÊ DESEJA?
+        - normal\n 
+        - com QUEIJO\n 
         <think>
             <set name="topic">BOLINHO DE ARROZ</set>
         </think>
@@ -289,6 +297,12 @@
     <pattern>GOSTARIA DE FAZER UM Cachorro Quente</pattern>
     <template>
         QUAL TIPO DE Cachorro Quente VOCÊ DESEJA?
+        - com batata palha\n 
+        - com duas salsichas\n
+        - com salsichas vegatarianas\n 
+        - com ervilha\n 
+        - com pepino\n 
+        - com batata doce\n  
         <think>
             <set name="topic">Cachorro Quente</set>
         </think>
@@ -298,7 +312,7 @@
 <topic name="Cachorro Quente">
 
     <category>
-        <pattern>Com batata palha em cima</pattern>
+        <pattern>Com batata palha</pattern>
         <template>
             RECEITA de \n
             -------1\n
@@ -358,7 +372,12 @@
     <pattern>GOSTARIA DE FAZER UM Macarão</pattern>
     <template>
         QUAL TIPO DE Macarão VOCÊ DESEJA?
-        - macarão abolonheza
+        - macarão abolonheza\n
+        - com almondegas\n
+        - com carnene\n 
+        - alho e oleo\n 
+        - carne e almondegas\n 
+        - com legumes\n 
         <think>
             <set name="topic">Macarão</set>
         </think>
@@ -429,6 +448,8 @@
     <pattern>GOSTARIA DE FAZER UM Frango</pattern>
     <template>
         QUAL TIPO DE Frango VOCÊ DESEJA?
+        - frango amilaneza\n 
+        - frango frito\n
         <think>
             <set name="topic">Frango</set>
         </think>
@@ -470,6 +491,8 @@
     <pattern>GOSTARIA DE FAZER UM Empada</pattern>
     <template>
         QUAL TIPO DE Empada VOCÊ DESEJA?
+        - CALABREZA\n 
+        - Peperone\n
         <think>
             <set name="topic">Empada</set>
         </think>
@@ -487,7 +510,7 @@
     </category>
 
     <category>
-        <pattern>Empada com CALABREZA</pattern>
+        <pattern>CALABREZA</pattern>
         <template>
             RECEITA de \n
             -------3\n
@@ -496,7 +519,7 @@
     </category>
 
     <category>
-        <pattern>Empada com peperone</pattern>
+        <pattern>Peperone</pattern>
         <template>
             RECEITA:\n
             ---4\n
@@ -511,6 +534,8 @@
     <pattern>GOSTARIA DE FAZER UM Porco</pattern>
     <template>
         QUAL TIPO DE Porco VOCÊ DESEJA?
+        - Porco com Bacon\n 
+        - Porco com batatas\n
         <think>
             <set name="topic">Porco</set>
         </think>
@@ -551,7 +576,7 @@
 <category>
     <pattern>GOSTARIA DE FAZER UMA Lasanha</pattern>
     <template>
-        QUAL TIPO DE Lasanha VOCÊ DESEJA?
+        QUAL TIPO DE Lasanha VOCÊ DESEJA? 
         <think>
             <set name="topic">Lasanha</set>
         </think>
@@ -657,6 +682,8 @@
     <pattern>GOSTARIA DE FAZER UMA Comida Vegetariana</pattern>
     <template>
         QUAL TIPO DE Comida Vegetariana VOCÊ DESEJA?
+        - salada de frutas\n 
+        - salada com sazon\n
         <think>
             <set name="topic">Vegetariana</set>
         </think>
@@ -699,6 +726,8 @@
     <template>
         QUAL TIPO DE SOBREMESSA VOCÊ DESEJA?
         - Pudim\n 
+        - brownie\n 
+        - sorvete\n 
 
         <think>
             <set name="topic">SOBREMESAS</set>
@@ -738,6 +767,15 @@
         <template>
             RECEITA:\n
             ---4\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+     <category>
+        <pattern>Bolo</pattern>
+        <template>
+            RECEITA:\n
+            ---5\n
             \nDESEJA VER OUTRA RECEITA?
         </template>
     </category>
