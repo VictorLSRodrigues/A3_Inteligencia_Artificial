@@ -599,7 +599,10 @@
     <category>
         <pattern>PUDIM</pattern>
         <template>
-            RECEITA 1:\n
+            RECEITA de Pudim
+            - Preparação da Calda: Em uma Panela, coloque 1 xícara açucar ao poucos na panela com o fogo baixo
+            até derreter e formar um caramelo. Acrescente a 200ml água quente aos poucos, mexendo com cuidado até dissolver tudo
+            despeje a calda na forma de pudim e espalhe bem no fundo e nas laterais.\n
             \nDESEJA VER OUTRA RECEITA?
         </template>
     </category>
@@ -607,8 +610,13 @@
     <category>
         <pattern>brownie</pattern>
         <template>
-            RECEITA de \n
-            -------3\n
+            RECEITA de brownie:\n
+            - 200g de chocolate meio amargo\n 
+            - 100g de manteiga\n 
+            - 3 ovos\n
+            - 1 xícara de açúcar\n 
+            - 1/2 xícara de farinha de trigo\n
+            - Sal\n
             \nDESEJA VER OUTRA RECEITA?
         </template>
     </category>
