@@ -24,9 +24,12 @@ kb = sys.argv[1]
 k = aiml.Kernel()
 k.learn(kb)
 
+print ("Descreva que tipo de comida voce quer hoje")
+
 while True:
     message = input("> ")
     message = filter(message)
     response = k.respond(message)
     response = response.replace('\\n', '\n')
     print(response)
+

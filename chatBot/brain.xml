@@ -7,8 +7,6 @@
     </template>
 </category>
 
-
-
 #Receitas
 
 #HAMBURGUER ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -16,6 +14,12 @@
     <pattern>GOSTARIA DE FAZER UM HAMBURGUER</pattern>
     <template>
         QUAL TIPO DE HAMBURGUER VOCÊ DESEJA?
+        - Salada\n
+        - ovo\n 
+        - Bacon\n 
+        - frango\n
+        - VEGETARIANO\n 
+        - X tudo 
         <think>
             <set name="topic">HAMBURGUER</set>
         </think>
@@ -354,6 +358,7 @@
     <pattern>GOSTARIA DE FAZER UM Macarão</pattern>
     <template>
         QUAL TIPO DE Macarão VOCÊ DESEJA?
+        - macarão abolonheza
         <think>
             <set name="topic">Macarão</set>
         </think>
@@ -366,6 +371,7 @@
         <pattern>abolonheza</pattern>
         <template>
             RECEITA de \n
+            
             -------1\n
             \nDESEJA VER OUTRA RECEITA?
         </template>
@@ -541,6 +547,110 @@
 
 </topic>
 
+# Lasanha ---------------------------------------------------------------------------------------------------------------------------------------------
+<category>
+    <pattern>GOSTARIA DE FAZER UMA Lasanha</pattern>
+    <template>
+        QUAL TIPO DE Lasanha VOCÊ DESEJA?
+        <think>
+            <set name="topic">Lasanha</set>
+        </think>
+    </template>
+</category>
+
+<topic name="Lasanha">
+
+    <category>
+        <pattern>Lasanha PLUS</pattern>
+        <template>
+            RECEITA 1:\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Lasanha Plus vip</pattern>
+        <template>
+            RECEITA de \n
+            -------3\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Lasanha com sazon</pattern>
+        <template>
+            RECEITA:\n
+            ---4\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+</topic>
+
+# Petiscos ---------------------------------------------------------------------------------------------------------------------------------------------
+<category>
+    <pattern>GOSTARIA DE FAZER UM Petisco</pattern>
+    <template>
+        QUAL TIPO DE Petisco VOCÊ DESEJA?
+        - Batata Frita\n 
+        - Onion Ring\n
+        - Pao Com Manteiga\n
+        - Bruschettas\n
+        - Frios\n
+        <think>
+            <set name="topic">Petisco</set>
+        </think>
+    </template>
+</category>
+
+<topic name="Lasanha">
+
+    <category>
+        <pattern>Batata Frita</pattern>
+        <template>
+            RECEITA 1:\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Onion Ring</pattern>
+        <template>
+            RECEITA de \n
+            -------3\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Pao Com Manteiga</pattern>
+        <template>
+            RECEITA:\n
+            ---4\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Bruschettas</pattern>
+        <template>
+            RECEITA:\n
+            ---4\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>Frios</pattern>
+        <template>
+            RECEITA:\n
+            ---4\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+</topic>
 
 # VEGETARIANO ---------------------------------------------------------------------------------------------------------------------------------------------
 <category>
@@ -588,6 +698,8 @@
     <pattern>GOSTARIA DE FAZER UMA SOBREMESA</pattern>
     <template>
         QUAL TIPO DE SOBREMESSA VOCÊ DESEJA?
+        - Pudim\n 
+
         <think>
             <set name="topic">SOBREMESAS</set>
         </think>
