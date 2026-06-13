@@ -740,10 +740,29 @@
     <category>
         <pattern>PUDIM</pattern>
         <template>
-            RECEITA de Pudim
-            - Preparação da Calda: Em uma Panela, coloque 1 xícara açucar ao poucos na panela com o fogo baixo
-            até derreter e formar um caramelo. Acrescente a 200ml água quente aos poucos, mexendo com cuidado até dissolver tudo
-            despeje a calda na forma de pudim e espalhe bem no fundo e nas laterais.\n
+            RECEITA DE PUDIM
+
+            INGREDIENTES:
+            - 1 xícara de açúcar (para a calda)\n
+            - 200 ml de água quente\n
+            - 1 lata de leite condensado\n
+            - 2 medidas da lata de leite\n
+            - 3 ovos\n
+
+            MODO DE PREPARO:
+
+            Calda:
+            1. Em uma panela, coloque 1 xícara de açúcar em fogo baixo.\n
+            2. Mexa até derreter e formar um caramelo.\n
+            3. Acrescente 200 ml de água quente aos poucos, mexendo até dissolver completamente.\n
+            4. Despeje a calda na forma de pudim e espalhe no fundo e nas laterais.\n
+            
+            Pudim:
+            1. Bata no liquidificador o leite condensado, o leite e os ovos.\n
+            2. Despeje a mistura na forma caramelizada.\n
+            3. Asse em banho-maria por aproximadamente 1 hora e 30 minutos.\n
+            4. Deixe esfriar e leve à geladeira antes de desenformar.\n
+
             \nDESEJA VER OUTRA RECEITA?
         </template>
     </category>
@@ -751,13 +770,24 @@
     <category>
         <pattern>brownie</pattern>
         <template>
-            RECEITA de brownie:\n
-            - 200g de chocolate meio amargo\n 
-            - 100g de manteiga\n 
+            RECEITA DE BROWNIE
+
+            INGREDIENTES:
+            - 200g de chocolate meio amargo\n
+            - 100g de manteiga\n
             - 3 ovos\n
-            - 1 xícara de açúcar\n 
+            - 1 xícara de açúcar\n
             - 1/2 xícara de farinha de trigo\n
-            - Sal\n
+            - 1 pitada de sal\n
+
+            MODO DE PREPARO:
+            1. Derreta o chocolate meio amargo junto com a manteiga.\n
+            2. Em uma tigela, bata os ovos com o açúcar.\n
+            3. Adicione o chocolate derretido e misture bem.\n
+            4. Acrescente a farinha de trigo e o sal, mexendo até obter uma massa homogênea.\n
+            5. Despeje a massa em uma forma untada.\n
+            6. Asse em forno preaquecido a 180°C por aproximadamente 25 a 30 minutos.\n
+            7. Retire do forno, deixe esfriar e corte em pedaços.\n
             \nDESEJA VER OUTRA RECEITA?
         </template>
     </category>
@@ -765,8 +795,23 @@
     <category>
         <pattern>SORVETE</pattern>
         <template>
-            RECEITA:\n
-            ---4\n
+            RECEITA DE SORVETE
+
+            INGREDIENTES:
+            - 1 lata de leite condensado\n
+            - 2 caixas de creme de leite\n
+            - 500 ml de leite\n
+            - 1 colher de sopa de liga neutra\n
+            - Essência ou sabor de sua preferência\n
+
+            MODO DE PREPARO:
+            1. Coloque todos os ingredientes no liquidificador.\n
+            2. Bata por aproximadamente 3 minutos, até obter uma mistura homogênea.\n
+            3. Despeje a mistura em um recipiente com tampa.\n
+            4. Leve ao congelador por cerca de 4 horas.\n
+            5. Retire do congelador e bata novamente para deixar o sorvete mais cremoso.\n
+            6. Volte ao congelador até firmar completamente.\n
+            7. Sirva gelado.\n
             \nDESEJA VER OUTRA RECEITA?
         </template>
     </category>
@@ -774,8 +819,26 @@
      <category>
         <pattern>Bolo</pattern>
         <template>
-            RECEITA:\n
-            ---5\n
+            RECEITA DE BOLO DE CHOCOLATE
+
+            INGREDIENTES:
+            - 2 xícaras de farinha de trigo\n
+            - 1 xícara de açúcar\n
+            - 1 xícara de chocolate em pó\n
+            - 3 ovos\n
+            - 1 xícara de leite\n
+            - 1/2 xícara de óleo\n
+            - 1 colher de sopa de fermento em pó\n
+
+            MODO DE PREPARO:
+            1. Preaqueça o forno a 180°C.\n
+            2. Em uma tigela, misture a farinha, o açúcar e o chocolate em pó.v
+            3. Adicione os ovos, o leite e o óleo, misturando até obter uma massa homogênea.\n
+            4. Acrescente o fermento e mexa delicadamente.\n
+            5. Despeje a massa em uma forma untada e enfarinhada.\n
+            6. Asse por aproximadamente 35 a 40 minutos.\n
+            7. Retire do forno, deixe esfriar e sirva.\n
+
             \nDESEJA VER OUTRA RECEITA?
         </template>
     </category>
