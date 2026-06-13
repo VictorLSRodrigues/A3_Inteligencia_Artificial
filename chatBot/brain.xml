@@ -1,81 +1,398 @@
 <aiml>
 #Usuario
-<category>
-    <pattern>MEU NOME E *</pattern>
-    <template>É um prazer te conhecer, 
-        <set name="userName"><star/></set>.
-    </template>
-</category>
+    <category>
+        <pattern>MEU NOME E *</pattern>
+        <template>É um prazer te conhecer, 
+            <set name="userName">
+                <star/>
+            </set>.
+        </template>
+    </category>
+
+    <category>
+        <pattern>SIM</pattern>
+        <template>Otimo! Para ver outra receita.
+    
+            DIGITE: Gostaria de fazer:\n
+                - uma entrada\n
+                - um hamburguer \n
+                - um ovo\n
+                - um bolinho de arroz\n
+                - uma coxinha\n
+                - uma pizza\n
+                - uma sobremesa\n
+                - uma comida mexicana\n
+                - uma bebida\n
+
+                Bebidas
+                - um drink\n
+
+                \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+
+    <category>
+        <pattern>NAO</pattern>
+        <template>Obrigado por usar o Livro de Receitas! Até mais, <get name="userName"/>
+.</template>
+    </category>
 
 #Receitas
 
-#HAMBURGUER ---------------------------------------------------------------------------------------------------------------------------------------------
+#ENTRADA ---------------------------------------------------------------------------------------------------------------------------------------------
 <category>
-    <pattern>GOSTARIA DE FAZER UM HAMBURGUER</pattern>
+    <pattern>GOSTARIA DE FAZER UMA ENTRADA</pattern>
     <template>
-        QUAL TIPO DE HAMBURGUER VOCÊ DESEJA?
-        - Salada\n
-        - ovo\n 
-        - Bacon\n 
-        - frango\n
-        - VEGETARIANO\n 
-        - X tudo 
+        QUAL TIPO DE ENTRADA VOCÊ DESEJA?\n
+        - Patê de azeitona preta\n
+        - Vinagrete de polvo\n
+        - Bolinho de feijoada\n
+        - Caldo de camarão\n
         <think>
-            <set name="topic">HAMBURGUER</set>
+            <set name="topic">ENTRADA</set>
         </think>
     </template>
 </category>
 
-<topic name="HAMBURGUER">
+<topic name="ENTRADA">
 
     <category>
-        <pattern>SALADA</pattern>
+        <pattern>PATÊ DE AZEITONA PRETA</pattern>
         <template>
+            RECEITA DE PATÊ DE AZEITONA PRETA:\n
+            \nIngredientes:\n
+            - 200g de azeitona preta sem caroço\n
+            - 2 dentes de alho\n
+            - 50g de castanha de caju (opcional)\n
+            - Suco de 1/2 limão\n
+            - 3 colheres de sopa de azeite de oliva\n
+            - Salsinha ou orégano a gosto\n
+            \nModo de preparo:\n
+            1. Bata todos os ingredientes no liquidificador ou processador\n
+            2. Adicione azeite aos poucos até formar uma pasta homogênea\n
+            3. Ajuste o sal (as azeitonas já são salgadas)\n
+            4. Sirva com torradas, pães ou biscoitos\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>VINAGRETE DE POLVO</pattern>
+        <template>
+            RECEITA DE VINAGRETE DE POLVO:\n
+            \nIngredientes:\n
+            - 300g de polvo cozido e picado\n
+            - 1 cebola roxa picada\n
+            - 1 pimentão vermelho picado\n
+            - 2 tomates sem semente picados\n
+            - Cheiro-verde a gosto\n
+            - Suco de 2 limões\n
+            - 1/2 xícara de azeite\n
+            - Sal e pimenta a gosto\n
+            \nModo de preparo:\n
+            1. Misture todos os ingredientes em uma tigela\n
+            2. Deixe marinar por 30 minutos na geladeira\n
+            3. Sirva acompanhado de torradas ou pão italiano\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>BOLINHO DE FEIJOADA</pattern>
+        <template>
+            RECEITA DE BOLINHO DE FEIJOADA:\n
+            \nIngredientes:\n
+            - 2 xícaras de feijoada pronta (bem batida no liquidificador)\n
+            - 1 xícara de farinha de trigo\n
+            - 1 ovo\n
+            - 1 xícara de farinha panko\n
+            - Óleo para fritar\n
+            \nModo de preparo:\n
+            1. Modele a feijoada batida em pequenas bolinhas\n
+            2. Passe no trigo, depois no ovo batido e na farinha panko\n
+            3. Frite em óleo quente até dourarem\n
+            4. Escorra em papel toalha e sirva quente\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+    <category>
+        <pattern>CALDO DE CAMARÃO</pattern>
+        <template>
+            RECEITA DE CALDO DE CAMARÃO:\n
+            \nIngredientes:\n
+            - 300g de camarão limpo\n
+            - 2 tomates picados\n
+            - 1 cebola picada\n
+            - 2 dentes de alho\n
+            - 1 litro de caldo de peixe ou água\n
+            - 1/2 xícara de creme de leite\n
+            - Sal, pimenta e coentro a gosto\n
+            \nModo de preparo:\n
+            1. Refogue cebola, alho e tomate\n
+            2. Adicione o camarão e refogue rapidamente\n
+            3. Acrescente o caldo e cozinhe por 10 minutos\n
+            4. Bata no liquidificador e volte à panela\n
+            5. Adicione o creme de leite e ajuste os temperos\n
+            6. Sirva quente com coentro picado\n
+            \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+</topic>
+
+# COMIDA MEXICANA ---------------------------------------------------------------------------------------------------------------------------------------------
+
+<category>
+    <pattern>GOSTARIA DE FAZER UMA COMIDA MEXICANA</pattern>
+    <template>
+        Você prefere a comida apimentada ou sem pimenta?\n
+        - Apimentada\n
+        - Sem pimenta
+        <think>
+            <set name="topic">MEXICANA</set>
+        </think>
+    </template>
+</category>
+
+<topic name="MEXICANA">
+
+    <category>
+        <pattern>APIMENTADA</pattern>
+        <template>
+            Qual prato apimentado você deseja?\n
+            - Tacos de camarão picante\n
+            - Burritos de chipotle\n
+            - Nachos com habanero\n
+            - Molho verde apimentado
+            <think>
+                <set name="topic">Apimentada</set>
+            </think>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SEM PIMENTA</pattern>
+        <template>
+            Qual prato sem pimenta você deseja?\n
+            - Enchiladas\n
+            - Tamales\n
+            - Sopa tortilla\n
+            - Churros
+            <think>
+                <set name="topic">Sem_pimenta</set>
+            </think>
+        </template>
+    </category>
+
+</topic>
+
+<topic name="Apimentada">
+
+    <category>
+        <pattern>TACOS DE CAMARÃO PICANTE</pattern>
+        <template>
+            Receita de Tacos de camarão picante:\n
+            \nIngredientes:\n
+            - 8 tortilhas de milho\n
+            - 500g de camarão limpo\n
+            - 3 pimentas dedo-de-moça\n
+            - 1 dente de alho\n
+            - Suco de 2 limões\n
+            - Coentro e cebola roxa\n
+            \nModo de preparo:\n
+            1. Tempere o camarão com alho, pimenta e limão\n
+            2. Frite rapidamente por 3 minutos\n
+            3. Aqueça as tortilhas\n
+            4. Monte com camarão, coentro e cebola roxa\n
+            \nDeseja ver outra receita?
+        </template>
+    </category>
+
+    <category>
+        <pattern>NACHOS COM HABANERO</pattern>
+        <template>
+            Receita de Nachos com habanero:\n
+            \nIngredientes:\n
+            - 1 pacote de nachos\n
+            - 200g de queijo derretido\n
+            - 1 pimenta habanero picada\n
+            - 100g de calabresa frita picada\n
+            - Molho de pimenta extra\n
+            \nModo de preparo:\n
+            1. Espalhe os nachos na assadeira\n
+            2. Cubra com queijo, habanero e calabresa\n
+            3. Leve ao forno a 180°C por 5 minutos\n
+            4. Regue com molho de pimenta\n
+            \nDeseja ver outra receita?
+        </template>
+    </category>
+
+    <category>
+        <pattern>MOLHO VERDE APIMENTADO</pattern>
+        <template>
+            Receita de Molho verde apimentado:\n
+            \nIngredientes:\n
+            - 5 tomatinhos verdes\n
+            - 2 pimentas serrano\n
+            - 1/4 de cebola\n
+            - 1 dente de alho\n
+            - Coentro e sal\n
+            \nModo de preparo:\n
+            1. Cozinhe os tomates e pimentas por 5 minutos\n
+            2. Bata tudo no liquidificador\n
+            3. Sirva com tacos, nachos ou torradas\n
+            \nDeseja ver outra receita?
+        </template>
+    </category>
+
+</topic>
+
+<topic name="Sem_pimenta">
+
+    <category>
+        <pattern>ENCHILADAS</pattern>
+        <template>
+            Receita de Enchiladas:\n
+            \nIngredientes:\n
+            - 6 tortilhas de milho\n
+            - 500g de frango desfiado\n
+            - 1 xícara de molho de tomate suave\n
+            - 200g de queijo muçarela\n
+            - Creme de leite\n
+            \nModo de preparo:\n
+            1. Recheie as tortilhas com frango e queijo\n
+            2. Enrole e coloque em uma assadeira\n
+            3. Cubra com molho de tomate e mais queijo\n
+            4. Leve ao forno a 180°C por 15 minutos\n
+            5. Sirva com creme de leite\n
+            \nDeseja ver outra receita?
+        </template>
+    </category>
+
+    <category>
+        <pattern>TAMALES</pattern>
+        <template>
+            Receita de Tamales:\n
+            \nIngredientes:\n
+            - 500g de massa de milho para tamales\n
+            - 300g de frango desfiado\n
+            - Folhas de milho ou bananeira\n
+            - Caldo de galinha\n
+            \nModo de preparo:\n
+            1. Hidrate as folhas em água quente\n
+            2. Espalhe a massa sobre a folha\n
+            3. Coloque frango no centro e feche\n
+            4. Cozinhe no vapor por 1 hora\n
+            \nDeseja ver outra receita?
+        </template>
+    </category>
+
+    <category>
+        <pattern>SOPA TORTILLA</pattern>
+        <template>
+            Receita de Sopa tortilla:\n
+            \nIngredientes:\n
+            - 6 tortilhas cortadas em tiras\n
+            - 1 litro de caldo de galinha\n
+            - 2 tomates\n
+            - 1 cebola e 2 dentes de alho\n
+            - Queijo, abacate e creme de leite\n
+            \nModo de preparo:\n
+            1. Frite as tiras de tortilha até crocantes\n
+            2. Bata tomate, cebola e alho com um pouco de caldo\n
+            3. Leve ao fogo com o resto do caldo por 10 minutos\n
+            4. Sirva com as tiras de tortilha, queijo, abacate e creme de leite\n
+            \nDeseja ver outra receita?
+        </template>
+    </category>
+
+    <category>
+        <pattern>CHURROS</pattern>
+        <template>
+            Receita de Churros:\n
+            \nIngredientes:\n
+            - 1 xícara de farinha de trigo\n
+            - 1 xícara de água\n
+            - 2 colheres de manteiga\n
+            - 1 ovo\n
+            - Açúcar e canela para polvilhar\n
+            - Doce de leite para acompanhar\n
+            \nModo de preparo:\n
+            1. Ferva a água com a manteiga\n
+            2. Adicione a farinha e mexa até desgrudar\n
+            3. Espere amornar, acrescente o ovo e misture\n
+            4. Coloque no saco de confeitar com bico estrela\n
+            5. Frite em óleo quente até dourar\n
+            6. Passe no açúcar com canela e sirva com doce de leite\n
+            \nDeseja ver outra receita?
+        </template>
+    </category>
+
+</topic>
+
+#HAMBURGUER ---------------------------------------------------------------------------------------------------------------------------------------------
+    <category>
+        <pattern>GOSTARIA DE FAZER UM HAMBURGUER</pattern>
+        <template>
+        QUAL TIPO DE HAMBURGUER VOCÊ DESEJA?
+            <think>
+                <set name="topic">HAMBURGUER</set>
+            </think>
+        </template>
+    </category>
+
+    <topic name="HAMBURGUER">
+
+        <category>
+            <pattern>SALADA</pattern>
+            <template>
             RECEITA DE HAMBURGUER DE SALADA:\n
             - pão\n
             - carne\n
             - alface\n
             - tomate\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>OVO</pattern>
-        <template>
+        <category>
+            <pattern>OVO</pattern>
+            <template>
             RECEITA DE HAMBURGUER COM OVO:\n
             - pão\n
             - carne\n
             - 2 ovos\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>BACON</pattern>
-        <template>
+        <category>
+            <pattern>BACON</pattern>
+            <template>
             RECEITA DE HAMBURGUER COM BACON:\n
             - pão\n
             - carne\n
             - 2 Bacons\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>FRANGO</pattern>
-        <template>
+        <category>
+            <pattern>FRANGO</pattern>
+            <template>
             RECEITA DE HAMBURGUER COM FRANGO:\n
             - pão\n
             - carne\n
             - FRANGO DE 300 GRAMAS\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>VEGETARIANO</pattern>
-        <template>
+        <category>
+            <pattern>VEGETARIANO</pattern>
+            <template>
             RECEITA DE HAMBURGUER COM VERDURAS:\n
             - pão\n
             - 1 tomate\n
@@ -83,12 +400,12 @@
             - 1 ABACATE\n
             - MOLHO DE VERDURAS\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>X TUDO</pattern>
-        <template>
+        <category>
+            <pattern>X TUDO</pattern>
+            <template>
             RECEITA DE HAMBURGUER COM TUDO:\n
             - pão\n
             - 1 carne\n
@@ -102,118 +419,158 @@
             - 1 pote de ketchupe\n
             - 1 pote de mostarda\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-</topic>
+    </topic>
 
 #OVO ---------------------------------------------------------------------------------------------------------------------------------------------
 <category>
     <pattern>GOSTARIA DE FAZER UM OVO</pattern>
     <template>
-        QUAL TIPO DE OVO VOCÊ DESEJA?
-        - MEXIDO\n 
-        - COZIDO\n 
-        <think>
-            <set name="topic">OVO</set>
-        </think>
+        QUAL TIPO DE OVO VOCÊ DESEJA?\n
+        - Mexido\n
+        - Cozido\n
+
+        \nDeseja ver outra receita?
     </template>
 </category>
 
 <topic name="OVO">
-
     <category>
         <pattern>MEXIDO</pattern>
         <template>
-            RECEITA DE OVO MEXIDO:\n
-            - PEGUE UMA FRIGIDEIRA\n
-            - INICIE SEU FOGÃO A FOGO ALTO OU MEDIO\n
-            - QUEBRE O OVO NA FRIGEDEIRA\n
-            - MIXTURE COM TEMPEROS E AFINS\n
-            \nDESEJA VER OUTRA RECEITA?
+            Receita de Ovo Mexido:\n
+            \nIngredientes:\n
+            - 2 ovos\n
+            - Sal a gosto\n
+            - Pimenta a gosto\n
+            - 1 colher de manteiga ou óleo\n
+            - Temperos opcionais (cebolinha, orégano, queijo)\n
+            \nModo de preparo:\n
+            1. Leve uma frigideira ao fogo médio com a manteiga\n
+            2. Quebre os ovos em uma tigela e bata com um garfo\n
+            3. Adicione os temperos e misture bem\n
+            4. Despeje na frigideira e mexa continuamente\n
+            5. Cozinhe até atingir a textura desejada\n
+            6. Sirva quente\n
+            \nDeseja ver outra receita?
         </template>
     </category>
 
     <category>
         <pattern>COZIDO</pattern>
         <template>
-            RECEITA DE OVO COZIDO:\n
-            - PEGUE UMA PANELA EM FORMATO DE CAMBUCA\n
-            - INICIE O FOGÃO A FOGO ALTO\n
-            - COLOQUE AGUA A UMA ALTURA ACEITAVEL\n
-            - COLOQUE O OVO\n
-            - ESPERE POR VOLTA DE 2 A 5 MINUTOS\n
-            \nDESEJA VER OUTRA RECEITA?
+            Receita de Ovo Cozido:\n
+            \nIngredientes:\n
+            - Ovos (quantidade desejada)\n
+            - Água\n
+            - Sal (opcional)\n
+            \nModo de preparo:\n
+            1. Coloque os ovos em uma panela\n
+            2. Cubra com água (cerca de 2 dedos acima dos ovos)\n
+            3. Leve ao fogo alto até ferver\n
+            4. Quando ferver, abaixe para fogo médio\n
+            5. Cozinhe por:\n
+               - 4 minutos: gema mole\n
+               - 6 minutos: gema cremosa\n
+               - 8-10 minutos: gema totalmente firme\n
+            6. Retire e coloque em água fria para parar o cozimento\n
+            7. Descasque e sirva\n
+            \nDeseja ver outra receita?
         </template>
     </category>
-
 </topic>
 
 #PIZZA ---------------------------------------------------------------------------------------------------------------------------------------------
 <category>
-    <pattern>GOSTARIA DE FAZER UM PIZZA</pattern>
+    <pattern>GOSTARIA DE FAZER UMA PIZZA</pattern>
     <template>
-        QUAL TIPO DE PIZZA VOCÊ DESEJA?
-        - CALABREZA\n 
-        - frango com CATUPIRY\n 
-        <think>
-            <set name="topic">PIZZA</set>
-        </think>
+        QUAL TIPO DE PIZZA VOCÊ DESEJA?\n
+        - Calabresa\n
+        - Frango com Catupiry\n
+
+        \nDeseja ver outra receita?
     </template>
 </category>
 
 <topic name="PIZZA">
-
     <category>
-        <pattern>CALEBREZA</pattern>
+        <pattern>CALABRESA</pattern>
         <template>
-            RECEITA DE PIZZA DE CALABREZA:\n
-            - PEGUE UMA MASSA DE PIZZA\n
-            - FAÇO TODO O PROÇESSO DE CRECER ATE UM TAMANHO ADEQUADRO\n
-            - COLOQUE MOLHO DE TOMATE EN UNA QUABTIDADE SATISFATORIA\n
-            - PEGUE 250 GRAMAS DE CALABREZA E CORTE EM FATIAS PEQUENAS\n
-            - PRE AQUEÇA SEU FOGÃO EM FOGO ALTO DURANTE 15 MINUTOS\n
-            - COLOQUE SUA PIZZA NO FOGÃO DURANTE APROXIMADAMENTE 1HORA E 30\n
-            \nDESEJA VER OUTRA RECEITA?
+            Receita de Pizza de Calabresa:\n
+
+            \nIngredientes:\n
+            - 1 massa de pizza pronta ou caseira\n
+            - 200ml de molho de tomate\n
+            - 250g de calabresa fatiada\n
+            - 200g de muçarela ralada\n
+            - 1 cebola fatiada\n
+            - Orégano a gosto\n
+            - Azeite\n
+
+            Modo de preparo:\n
+            1. Preaqueça o forno a 250°C por 15 minutos\n
+            2. Abra a massa em uma forma untada com azeite\n
+            3. Espalhe o molho de tomate uniformemente\n
+            4. Distribua a muçarela sobre o molho\n
+            5. Coloque as fatias de calabresa e a cebola\n
+            6. Polvilhe orégano a gosto\n
+            7. Leve ao forno por aproximadamente 15-20 minutos\n
+            8. Retire quando a borda estiver dourada e o queijo derretido\n
+
+            \nDeseja ver outra receita?
         </template>
     </category>
 
     <category>
         <pattern>FRANGO COM CATUPIRY</pattern>
         <template>
-            RECEITA DE PIZZA FRANGO COM CATUPIRY:\n
-            - PEGUE UMA MASSA DE PIZZA\n
-            - FAÇO TODO O PROÇESSO DE CRECER ATE UM TAMANHO ADEQUADRO\n
-            - COLOQUE MOLHO DE TOMATE EN UNA QUABTIDADE SATISFATORIA\n
-            - PEQUE UM FRAGO DESFIADO DE 250 GRAMAS\n
-            - PEGUE UM TUBO DE CATUPIRY DE 250 GRAMAS\n
-            - FAÇA UM ZIG ZAG ENTRE OS DOIS\n
-            - PRE AQUEÇA SEU FOGÃO EM FOGO ALTO DURANTE 15 MINUTOS\n
-            - COLOQUE SUA PIZZA NO FOGÃO DURANTE APROXIMADAMENTE 1HORA E 30\n
-            \nDESEJA VER OUTRA RECEITA?
+            Receita de Pizza de Frango com Catupiry:\n
+
+            \nIngredientes:\n
+            - 1 massa de pizza pronta ou caseira\n
+            - 200ml de molho de tomate\n
+            - 250g de frango desfiado e temperado\n
+            - 200g de muçarela ralada\n
+            - 150g de Catupiry (ou requeijão cremoso)\n
+            - 1 tomate fatiado (opcional)\n
+            - Orégano a gosto\n
+            - Azeite\n
+
+            \nModo de preparo:\n
+            1. Preaqueça o forno a 250°C por 15 minutos\n
+            2. Abra a massa em uma forma untada com azeite\n
+            3. Espalhe o molho de tomate uniformemente\n
+            4. Distribua a muçarela sobre o molho\n
+            5. Espalhe o frango desfiado por toda a pizza\n
+            6. Coloque colheradas de Catupiry em zig-zag sobre o frango\n
+            7. Adicione as fatias de tomate (opcional)\n
+            8. Polvilhe orégano a gosto\n
+            9. Leve ao forno por aproximadamente 15-20 minutos\n
+            10. Retire quando a borda estiver dourada e o queijo derretido\n
+
+            \nDeseja ver outra receita?
         </template>
     </category>
-
 </topic>
 
 #COXINHA ---------------------------------------------------------------------------------------------------------------------------------------------
-<category>
-    <pattern>GOSTARIA DE FAZER UMA COXINHA</pattern>
-    <template>
-        QUAL TIPO DE COXINHA VOCÊ DESEJA?
-        - 4 QUEIJOS\n 
-        - camarão\n
-        <think>
-            <set name="topic">COXINHA</set>
-        </think>
-    </template>
-</category>
-
-<topic name="COXINHA">
-
     <category>
-        <pattern>4 QUEIJOS</pattern>
+        <pattern>GOSTARIA DE FAZER UMA COXINHA</pattern>
         <template>
+        QUAL TIPO DE COXINHA VOCÊ DESEJA?
+            <think>
+                <set name="topic">COXINHA</set>
+            </think>
+        </template>
+    </category>
+
+    <topic name="COXINHA">
+
+        <category>
+            <pattern>4 QUEIJOS</pattern>
+            <template>
             RECEITA DE COXINHA DE 4 QUEIJOS:\n
             - FAÇA A MASSA DE UMA COXINHA\n
             - CRIE COXINHAS COM A MASSA\n
@@ -221,12 +578,12 @@
             - PRE AQUEÇA SEU FOGÃO EM FOGO ALTO DURANTE 15 MINUTOS\n
             - COLOQUE SUAS COXINHAS NO FOGÃO DURANTE APROXIMADAMENTE 1HORA\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>CAMARAO</pattern>
-        <template>
+        <category>
+            <pattern>CAMARAO</pattern>
+            <template>
             RECEITA DE COXINHA CAMARAO:\n
             - FAÇA A MASSA DE UMA COXINHA\n
             - CRIE COXINHAS COM A MASSA\n
@@ -237,29 +594,27 @@
             - PRE AQUEÇA SEU FOGÃO EM FOGO ALTO DURANTE 15 MINUTOS\n
             - COLOQUE SUAS COXINHAS NO FOGÃO DURANTE APROXIMADAMENTE 1HORA\n
             \nDESEJA VER OUTRA RECEITA?
+            </template>
+        </category>
+
+    </topic>
+
+#BOLINHO DE AROZ ---------------------------------------------------------------------------------------------------------------------------------------------
+    <category>
+        <pattern>GOSTARIA DE FAZER UM BOLINHO DE ARROZ</pattern>
+        <template>
+        QUAL TIPO DE BOLINHO DE ARROZ VOCÊ DESEJA?
+            <think>
+                <set name="topic">BOLINHO DE ARROZ</set>
+            </think>
         </template>
     </category>
 
-</topic>
+    <topic name="BOLINHO DE ARROZ">
 
-#BOLINHO DE AROZ ---------------------------------------------------------------------------------------------------------------------------------------------
-<category>
-    <pattern>GOSTARIA DE FAZER UM BOLINHO DE ARROZ</pattern>
-    <template>
-        QUAL TIPO DE BOLINHO DE ARROZ VOCÊ DESEJA?
-        - normal\n 
-        - com QUEIJO\n 
-        <think>
-            <set name="topic">BOLINHO DE ARROZ</set>
-        </think>
-    </template>
-</category>
-
-<topic name="BOLINHO DE ARROZ">
-
-    <category>
-        <pattern>NORMAL</pattern>
-        <template>
+        <category>
+            <pattern>NORMAL</pattern>
+            <template>
             RECEITA DE BOLINHO DE ARROZ NORMAL:\n
             - PEGUE O ARROZ DE UM DIA ANTERIOR\n
             - TEMPERE COM TEMPEROS A VONTADE\n
@@ -270,12 +625,12 @@
             - COLOQUE SEUS BOLINHOS NA FRITADEIRA\n
             - FIQUE VENDO ATE FICAREM DOURADOS\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>COM QUEIJO</pattern>
-        <template>
+        <category>
+            <pattern>COM QUEIJO</pattern>
+            <template>
             RECEITA DE BOLINHO DE ARROZ COM QUEIJO:\n
             - PEGUE O ARROZ DE UM DIA ANTERIOR\n
             - TEMPERE COM TEMPEROS A VONTADE\n
@@ -287,568 +642,534 @@
             - COLOQUE SEUS BOLINHOS NA FRITADEIRA\n
             - FIQUE VENDO ATE FICAREM DOURADOS\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-</topic>
+    </topic>
 
 #Cachorro Quente ---------------------------------------------------------------------------------------------------------------------------------------------
-<category>
-    <pattern>GOSTARIA DE FAZER UM Cachorro Quente</pattern>
-    <template>
-        QUAL TIPO DE Cachorro Quente VOCÊ DESEJA?
-        - com batata palha\n 
-        - com duas salsichas\n
-        - com salsichas vegatarianas\n 
-        - com ervilha\n 
-        - com pepino\n 
-        - com batata doce\n  
-        <think>
-            <set name="topic">Cachorro Quente</set>
-        </think>
-    </template>
-</category>
-
-<topic name="Cachorro Quente">
-
     <category>
-        <pattern>Com batata palha</pattern>
+        <pattern>GOSTARIA DE FAZER UM CACHORRO QUENTE</pattern>
         <template>
+        QUAL TIPO DE Cachorro Quente VOCÊ DESEJA?
+            <think>
+                <set name="topic">Cachorro Quente</set>
+            </think>
+        </template>
+    </category>
+
+    <topic name="Cachorro Quente">
+
+        <category>
+            <pattern>Com batata palha em cima</pattern>
+            <template>
             RECEITA de \n
             -------1\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>Com duas salsichas</pattern>
-        <template>
+        <category>
+            <pattern>Com duas salsichas</pattern>
+            <template>
             RECEITA de \n
             -------2\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>Com salsichas vegatarianas</pattern>
-        <template>
+        <category>
+            <pattern>Com salsichas vegatarianas</pattern>
+            <template>
             RECEITA de \n
             -------2\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>Com ervilha</pattern>
-        <template>
+        <category>
+            <pattern>Com ervilha</pattern>
+            <template>
             RECEITA de \n
             -------2\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>Com pepino</pattern>
-        <template>
+        <category>
+            <pattern>Com pepino</pattern>
+            <template>
             RECEITA de \n
             -------2\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>Com batata doce</pattern>
-        <template>
+        <category>
+            <pattern>Com batata doce</pattern>
+            <template>
             RECEITA de \n
             -------2\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-</topic>
+    </topic>
 
 #Macarão ---------------------------------------------------------------------------------------------------------------------------------------------
-<category>
-    <pattern>GOSTARIA DE FAZER UM Macarão</pattern>
-    <template>
-        QUAL TIPO DE Macarão VOCÊ DESEJA?
-        - macarão abolonheza\n
-        - com almondegas\n
-        - com carnene\n 
-        - alho e oleo\n 
-        - carne e almondegas\n 
-        - com legumes\n 
-        <think>
-            <set name="topic">Macarão</set>
-        </think>
-    </template>
-</category>
-
-<topic name="Macarão">
-
     <category>
-        <pattern>abolonheza</pattern>
+        <pattern>GOSTARIA DE FAZER UM MACARRAO</pattern>
         <template>
+        QUAL TIPO DE Macarão VOCÊ DESEJA?
+            <think>
+                <set name="topic">Macarão</set>
+            </think>
+        </template>
+    </category>
+
+    <topic name="Macarão">
+
+        <category>
+            <pattern>abolonheza</pattern>
+            <template>
             RECEITA de \n
-            
             -------1\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>Com almondegas</pattern>
-        <template>
+        <category>
+            <pattern>Com almondegas</pattern>
+            <template>
             RECEITA de \n
             -------2\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>Com carne</pattern>
-        <template>
+        <category>
+            <pattern>Com carne</pattern>
+            <template>
             RECEITA de \n
             -------2\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>alho e oleo</pattern>
-        <template>
+        <category>
+            <pattern>alho e oleo</pattern>
+            <template>
             RECEITA de \n
             -------2\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>carne e almondegas</pattern>
-        <template>
+        <category>
+            <pattern>carne e almondegas</pattern>
+            <template>
             RECEITA de \n
             -------2\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>com legumes</pattern>
-        <template>
+        <category>
+            <pattern>com legumes</pattern>
+            <template>
             RECEITA de \n
             -------2\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-</topic>
+    </topic>
 
 # Frango ---------------------------------------------------------------------------------------------------------------------------------------------
-<category>
-    <pattern>GOSTARIA DE FAZER UM Frango</pattern>
-    <template>
-        QUAL TIPO DE Frango VOCÊ DESEJA?
-        - frango amilaneza\n 
-        - frango frito\n
-        <think>
-            <set name="topic">Frango</set>
-        </think>
-    </template>
-</category>
-
-<topic name="Frango">
-
     <category>
-        <pattern>Frango PLUS</pattern>
+        <pattern>GOSTARIA DE FAZER UM FRANGO</pattern>
         <template>
-            RECEITA 1:\n
-            \nDESEJA VER OUTRA RECEITA?
+        QUAL TIPO DE Frango VOCÊ DESEJA?
+            <think>
+                <set name="topic">Frango</set>
+            </think>
         </template>
     </category>
 
-    <category>
-        <pattern>Frango amilaneza</pattern>
-        <template>
+    <topic name="Frango">
+
+        <category>
+            <pattern>Frango PLUS</pattern>
+            <template>
+            RECEITA 1:\n
+            \nDESEJA VER OUTRA RECEITA?
+            </template>
+        </category>
+
+        <category>
+            <pattern>Frango amilaneza</pattern>
+            <template>
             RECEITA de \n
             -------3\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>frango frito</pattern>
-        <template>
+        <category>
+            <pattern>frango frito</pattern>
+            <template>
             RECEITA:\n
             ---4\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-</topic>
+    </topic>
 
 #Empada ---------------------------------------------------------------------------------------------------------------------------------------------
-<category>
-    <pattern>GOSTARIA DE FAZER UM Empada</pattern>
-    <template>
-        QUAL TIPO DE Empada VOCÊ DESEJA?
-        - CALABREZA\n 
-        - Peperone\n
-        <think>
-            <set name="topic">Empada</set>
-        </think>
-    </template>
-</category>
-
-<topic name="Empada">
-
     <category>
-        <pattern>Empada PLUS</pattern>
+        <pattern>GOSTARIA DE FAZER UM EMPADA</pattern>
         <template>
-            RECEITA 1:\n
-            \nDESEJA VER OUTRA RECEITA?
+        QUAL TIPO DE Empada VOCÊ DESEJA?
+            <think>
+                <set name="topic">Empada</set>
+            </think>
         </template>
     </category>
 
-    <category>
-        <pattern>CALABREZA</pattern>
-        <template>
+    <topic name="Empada">
+
+        <category>
+            <pattern>Empada PLUS</pattern>
+            <template>
+            RECEITA 1:\n
+            \nDESEJA VER OUTRA RECEITA?
+            </template>
+        </category>
+
+        <category>
+            <pattern>Empada com CALABREZA</pattern>
+            <template>
             RECEITA de \n
             -------3\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>Peperone</pattern>
-        <template>
+        <category>
+            <pattern>Empada com peperone</pattern>
+            <template>
             RECEITA:\n
             ---4\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-</topic>
+    </topic>
 
 # Porco ---------------------------------------------------------------------------------------------------------------------------------------------
-<category>
-    <pattern>GOSTARIA DE FAZER UM Porco</pattern>
-    <template>
+    <category>
+        <pattern>GOSTARIA DE FAZER UM PORCO</pattern>
+        <template>
         QUAL TIPO DE Porco VOCÊ DESEJA?
-        - Porco com Bacon\n 
-        - Porco com batatas\n
-        <think>
-            <set name="topic">Porco</set>
-        </think>
-    </template>
-</category>
-
-<topic name="Porco">
-
-    <category>
-        <pattern>Porco PLUS</pattern>
-        <template>
-            RECEITA 1:\n
-            \nDESEJA VER OUTRA RECEITA?
+            <think>
+                <set name="topic">Porco</set>
+            </think>
         </template>
     </category>
 
-    <category>
-        <pattern>Porco com Bacon</pattern>
-        <template>
+    <topic name="Porco">
+
+        <category>
+            <pattern>Porco PLUS</pattern>
+            <template>
+            RECEITA 1:\n
+            \nDESEJA VER OUTRA RECEITA?
+            </template>
+        </category>
+
+        <category>
+            <pattern>Porco com Bacon</pattern>
+            <template>
             RECEITA de \n
             -------3\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>Porco com batatas</pattern>
-        <template>
+        <category>
+            <pattern>Porco com batatas</pattern>
+            <template>
             RECEITA:\n
             ---4\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-</topic>
+    </topic>
 
-# Lasanha ---------------------------------------------------------------------------------------------------------------------------------------------
-<category>
-    <pattern>GOSTARIA DE FAZER UMA Lasanha</pattern>
-    <template>
-        QUAL TIPO DE Lasanha VOCÊ DESEJA? 
-        <think>
-            <set name="topic">Lasanha</set>
-        </think>
-    </template>
-</category>
-
-<topic name="Lasanha">
-
-    <category>
-        <pattern>Lasanha PLUS</pattern>
-        <template>
-            RECEITA 1:\n
-            \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
-
-    <category>
-        <pattern>Lasanha Plus vip</pattern>
-        <template>
-            RECEITA de \n
-            -------3\n
-            \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
-
-    <category>
-        <pattern>Lasanha com sazon</pattern>
-        <template>
-            RECEITA:\n
-            ---4\n
-            \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
-
-</topic>
-
-# Petiscos ---------------------------------------------------------------------------------------------------------------------------------------------
-<category>
-    <pattern>GOSTARIA DE FAZER UM Petisco</pattern>
-    <template>
-        QUAL TIPO DE Petisco VOCÊ DESEJA?
-        - Batata Frita\n 
-        - Onion Ring\n
-        - Pao Com Manteiga\n
-        - Bruschettas\n
-        - Frios\n
-        <think>
-            <set name="topic">Petisco</set>
-        </think>
-    </template>
-</category>
-
-<topic name="Lasanha">
-
-    <category>
-        <pattern>Batata Frita</pattern>
-        <template>
-            RECEITA 1:\n
-            \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
-
-    <category>
-        <pattern>Onion Ring</pattern>
-        <template>
-            RECEITA de \n
-            -------3\n
-            \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
-
-    <category>
-        <pattern>Pao Com Manteiga</pattern>
-        <template>
-            RECEITA:\n
-            ---4\n
-            \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
-
-    <category>
-        <pattern>Bruschettas</pattern>
-        <template>
-            RECEITA:\n
-            ---4\n
-            \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
-
-    <category>
-        <pattern>Frios</pattern>
-        <template>
-            RECEITA:\n
-            ---4\n
-            \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
-
-</topic>
 
 # VEGETARIANO ---------------------------------------------------------------------------------------------------------------------------------------------
-<category>
-    <pattern>GOSTARIA DE FAZER UMA Comida Vegetariana</pattern>
-    <template>
-        QUAL TIPO DE Comida Vegetariana VOCÊ DESEJA?
-        - salada de frutas\n 
-        - salada com sazon\n
-        <think>
-            <set name="topic">Vegetariana</set>
-        </think>
-    </template>
-</category>
-
-<topic name="Vegetariana">
-
     <category>
-        <pattern>Salada PLUS</pattern>
+        <pattern>GOSTARIA DE FAZER UMA Comida VEGETARIANA</pattern>
         <template>
-            RECEITA 1:\n
-            \nDESEJA VER OUTRA RECEITA?
+        QUAL TIPO DE Comida Vegetariana VOCÊ DESEJA?
+            <think>
+                <set name="topic">Vegetariana</set>
+            </think>
         </template>
     </category>
 
-    <category>
-        <pattern>Salada de fruta</pattern>
-        <template>
+    <topic name="Vegetariana">
+
+        <category>
+            <pattern>Salada PLUS</pattern>
+            <template>
+            RECEITA 1:\n
+            \nDESEJA VER OUTRA RECEITA?
+            </template>
+        </category>
+
+        <category>
+            <pattern>Salada de fruta</pattern>
+            <template>
             RECEITA de \n
             -------3\n
             \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+            </template>
+        </category>
 
-    <category>
-        <pattern>Salada com sazon</pattern>
-        <template>
+        <category>
+            <pattern>Salada com sazon</pattern>
+            <template>
             RECEITA:\n
             ---4\n
             \nDESEJA VER OUTRA RECEITA?
+            </template>
+        </category>
+
+    </topic>
+
+#Sobremesas ---------------------------------------------------------------------------------------------------------------------------------------------
+    <category>
+        <pattern>GOSTARIA DE FAZER UMA SOBREMESA</pattern>
+        <template>
+        QUAL TIPO DE SOBREMESSA VOCÊ DESEJA?
+            <think>
+                <set name="topic">SOBREMESAS</set>
+            </think>
         </template>
     </category>
 
-</topic>
+    <topic name="SOBREMESAS">
 
-#Sobremesas ---------------------------------------------------------------------------------------------------------------------------------------------
+        <category>
+            <pattern>PUDIM</pattern>
+            <template>
+            RECEITA 1:\n
+            \nDESEJA VER OUTRA RECEITA?
+            </template>
+        </category>
+
+        <category>
+            <pattern>brownie</pattern>
+            <template>
+            RECEITA de \n
+            -------3\n
+            \nDESEJA VER OUTRA RECEITA?
+            </template>
+        </category>
+
+        <category>
+            <pattern>SORVETE</pattern>
+            <template>
+            RECEITA:\n
+            ---4\n
+            \nDESEJA VER OUTRA RECEITA?
+            </template>
+        </category>
+
+    </topic>
+#Drinks ---------------------------------------------------------------------------------------------------------------------------------------------
+
 <category>
-    <pattern>GOSTARIA DE FAZER UMA SOBREMESA</pattern>
+    <pattern>GOSTARIA DE FAZER UM DRINK</pattern>
     <template>
-        QUAL TIPO DE SOBREMESSA VOCÊ DESEJA?
-        - Pudim\n 
-        - brownie\n 
-        - sorvete\n 
-        - bolo\n 
-        <think>
-            <set name="topic">SOBREMESAS</set>
-        </think>
+        QUAL TIPO DE DRINK VOCÊ DESEJA?\n
+        - Alcoólico\n
+        - Não alcoólico\n
+
+        \nDeseja ver outra receita?
     </template>
 </category>
 
-<topic name="SOBREMESAS">
-
+<topic name="DRINKS">
     <category>
-        <pattern>PUDIM</pattern>
+        <pattern>ALCOOLICO</pattern>
         <template>
-            RECEITA DE PUDIM
-
-            INGREDIENTES:
-            - 1 xícara de açúcar (para a calda)\n
-            - 200 ml de água quente\n
-            - 1 lata de leite condensado\n
-            - 2 medidas da lata de leite\n
-            - 3 ovos\n
-
-            MODO DE PREPARO:
-
-            Calda:
-            1. Em uma panela, coloque 1 xícara de açúcar em fogo baixo.\n
-            2. Mexa até derreter e formar um caramelo.\n
-            3. Acrescente 200 ml de água quente aos poucos, mexendo até dissolver completamente.\n
-            4. Despeje a calda na forma de pudim e espalhe no fundo e nas laterais.\n
-            
-            Pudim:
-            1. Bata no liquidificador o leite condensado, o leite e os ovos.\n
-            2. Despeje a mistura na forma caramelizada.\n
-            3. Asse em banho-maria por aproximadamente 1 hora e 30 minutos.\n
-            4. Deixe esfriar e leve à geladeira antes de desenformar.\n
-
-            \nDESEJA VER OUTRA RECEITA?
+            Temos as seguintes bebidas alcoólicas:\n
+            - Caipirinha\n
+            - Mojito\n
+            - Gin Tônica\n
+            - Cerveja\n
+            \nDeseja ver outra receita?
         </template>
     </category>
 
     <category>
-        <pattern>brownie</pattern>
+        <pattern>NAO ALCOOLICO</pattern>
         <template>
-            RECEITA DE BROWNIE
-
-            INGREDIENTES:
-            - 200g de chocolate meio amargo\n
-            - 100g de manteiga\n
-            - 3 ovos\n
-            - 1 xícara de açúcar\n
-            - 1/2 xícara de farinha de trigo\n
-            - 1 pitada de sal\n
-
-            MODO DE PREPARO:
-            1. Derreta o chocolate meio amargo junto com a manteiga.\n
-            2. Em uma tigela, bata os ovos com o açúcar.\n
-            3. Adicione o chocolate derretido e misture bem.\n
-            4. Acrescente a farinha de trigo e o sal, mexendo até obter uma massa homogênea.\n
-            5. Despeje a massa em uma forma untada.\n
-            6. Asse em forno preaquecido a 180°C por aproximadamente 25 a 30 minutos.\n
-            7. Retire do forno, deixe esfriar e corte em pedaços.\n
-            \nDESEJA VER OUTRA RECEITA?
+            Temos as seguintes bebidas não alcoólicas:\n
+            - Suco de Laranja\n
+            - Refrigerante\n
+            - Água com gás\n
+            - Milkshake\n
+            \nDeseja ver outra receita?
         </template>
     </category>
 
     <category>
-        <pattern>SORVETE</pattern>
+        <pattern>CAIPIRINHA</pattern>
         <template>
-            RECEITA DE SORVETE
-
-            INGREDIENTES:
-            - 1 lata de leite condensado\n
-            - 2 caixas de creme de leite\n
-            - 500 ml de leite\n
-            - 1 colher de sopa de liga neutra\n
-            - Essência ou sabor de sua preferência\n
-
-            MODO DE PREPARO:
-            1. Coloque todos os ingredientes no liquidificador.\n
-            2. Bata por aproximadamente 3 minutos, até obter uma mistura homogênea.\n
-            3. Despeje a mistura em um recipiente com tampa.\n
-            4. Leve ao congelador por cerca de 4 horas.\n
-            5. Retire do congelador e bata novamente para deixar o sorvete mais cremoso.\n
-            6. Volte ao congelador até firmar completamente.\n
-            7. Sirva gelado.\n
-            \nDESEJA VER OUTRA RECEITA?
+            Receita da Caipirinha:\n
+            \nIngredientes:\n
+            - 1 limão cortado em 4 partes\n
+            - 2 colheres de açúcar\n
+            - 50ml de cachaça\n
+            - Gelo\n
+            \nModo de preparo:\n
+            1. Macere o limão com o açúcar\n
+            2. Adicione o gelo e a cachaça\n
+            3. Mexa bem e sirva\n
+            \nDeseja ver outra receita?
         </template>
     </category>
 
-     <category>
-        <pattern>Bolo</pattern>
+    <category>
+        <pattern>MOJITO</pattern>
         <template>
-            RECEITA DE BOLO DE CHOCOLATE
-
-            INGREDIENTES:
-            - 2 xícaras de farinha de trigo\n
-            - 1 xícara de açúcar\n
-            - 1 xícara de chocolate em pó\n
-            - 3 ovos\n
-            - 1 xícara de leite\n
-            - 1/2 xícara de óleo\n
-            - 1 colher de sopa de fermento em pó\n
-
-            MODO DE PREPARO:
-            1. Preaqueça o forno a 180°C.\n
-            2. Em uma tigela, misture a farinha, o açúcar e o chocolate em pó.v
-            3. Adicione os ovos, o leite e o óleo, misturando até obter uma massa homogênea.\n
-            4. Acrescente o fermento e mexa delicadamente.\n
-            5. Despeje a massa em uma forma untada e enfarinhada.\n
-            6. Asse por aproximadamente 35 a 40 minutos.\n
-            7. Retire do forno, deixe esfriar e sirva.\n
-
-            \nDESEJA VER OUTRA RECEITA?
+            Receita do Mojito:\n
+            \nIngredientes:\n
+            - 6 folhas de hortelã\n
+            - 1 limão cortado\n
+            - 2 colheres de açúcar\n
+            - 50ml de rum branco\n
+            - Água com gás\n
+            - Gelo\n
+            \nModo de preparo:\n
+            1. Macere hortelã, limão e açúcar\n
+            2. Adicione gelo e rum\n
+            3. Complete com água com gás\n
+            4. Mexa delicadamente\n
+            \nDeseja ver outra receita?
         </template>
     </category>
 
+    <category>
+        <pattern>GIN TONICA</pattern>
+        <template>
+            Receita do Gin Tônica:\n
+            \nIngredientes:\n
+            - 50ml de gin\n
+            - 150ml de água tônica\n
+            - Rodela de limão ou laranja\n
+            - Gelo\n
+            \nModo de preparo:\n
+            1. Encha o copo com gelo\n
+            2. Adicione o gin\n
+            3. Complete com água tônica\n
+            4. Decore com a rodela\n
+            \nDeseja ver outra receita?
+        </template>
+    </category>
+
+    <category>
+        <pattern>CERVEJA</pattern>
+        <template>
+            Como servir cerveja:\n
+            \nIngredientes:\n
+            - 1 copo gelado\n
+            - 300ml de cerveja de sua preferência\n
+            \nModo de preparo:\n
+            1. Incline o copo a 45°\n
+            2. Despeje a cerveja cuidadosamente\n
+            3. Endireite o copo ao final\n
+            \nDeseja ver outra receita?
+        </template>
+    </category>
+
+    <category>
+        <pattern>SUCO DE LARANJA</pattern>
+        <template>
+            Receita do Suco de Laranja:\n
+            \nIngredientes:\n
+            - 4 laranjas maduras\n
+            - Açúcar a gosto\n
+            - Gelo (opcional)\n
+            \nModo de preparo:\n
+            1. Corte as laranjas ao meio\n
+            2. Esprema até extrair todo o suco\n
+            3. Adoce a gosto\n
+            4. Sirva com gelo se desejar\n
+            \nDeseja ver outra receita?
+        </template>
+    </category>
+
+    <category>
+        <pattern>REFRIGERANTE</pattern>
+        <template>
+            Como servir refrigerante:\n
+            \nIngredientes:\n
+            - 1 copo com gelo\n
+            - 300ml de refrigerante de sua preferência\n
+            - 1 rodela de limão (opcional)\n
+            \nModo de preparo:\n
+            1. Encha o copo com gelo\n
+            2. Despeje o refrigerante\n
+            3. Decore com limão se quiser\n
+            \nDeseja ver outra receita?
+        </template>
+    </category>
+
+    <category>
+        <pattern>AGUA COM GAS</pattern>
+        <template>
+            Receita da Água com Gás:\n
+            \nIngredientes:\n
+            - 300ml de água com gás\n
+            - Gelo\n
+            - Rodela de limão ou laranja\n
+            \nModo de preparo:\n
+            1. Encha o copo com gelo\n
+            2. Adicione a água com gás\n
+            3. Decore com a fruta\n
+            \nDeseja ver outra receita?
+        </template>
+    </category>
+
+    <category>
+        <pattern>MILKSHAKE</pattern>
+        <template>
+            Receita do Milkshake:\n
+            \nIngredientes:\n
+            - 2 bolas de sorvete (creme/morango/chocolate)\n
+            - 200ml de leite\n
+            - Calda a gosto\n
+            - Chantilly (opcional)\n
+            \nModo de preparo:\n
+            1. Coloque o sorvete e o leite no liquidificador\n
+            2. Bata até ficar homogêneo\n
+            3. Adicione calda a gosto\n
+            4. Sirva com chantilly se desejar\n
+            \nDeseja ver outra receita?
+        </template>
+    </category>
 </topic>
 
 #Error
-<category>
-    <pattern> * </pattern>
-    <template>Eu não entendi pode Repetir?.</template>
-</category>
+    <category>
+        <pattern> * </pattern>
+        <template>Eu não entendi pode Repetir?.</template>
+    </category>
 
 </aiml>
