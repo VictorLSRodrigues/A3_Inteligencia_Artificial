@@ -337,6 +337,9 @@
         <pattern>GOSTARIA DE FAZER UM HAMBURGUER</pattern>
         <template>
         QUAL TIPO DE HAMBURGUER VOCÊ DESEJA?
+        -X Tudo
+        -X Frango 
+        -X Vegetariano
             <think>
                 <set name="topic">HAMBURGUER</set>
             </think>
@@ -345,82 +348,84 @@
 
     <topic name="HAMBURGUER">
 
-        <category>
-            <pattern>SALADA</pattern>
-            <template>
-            RECEITA DE HAMBURGUER DE SALADA:\n
-            - pão\n
-            - carne\n
-            - alface\n
-            - tomate\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
-
-        <category>
-            <pattern>OVO</pattern>
-            <template>
-            RECEITA DE HAMBURGUER COM OVO:\n
-            - pão\n
-            - carne\n
-            - 2 ovos\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
-
-        <category>
-            <pattern>BACON</pattern>
-            <template>
-            RECEITA DE HAMBURGUER COM BACON:\n
-            - pão\n
-            - carne\n
-            - 2 Bacons\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
-
-        <category>
-            <pattern>FRANGO</pattern>
-            <template>
-            RECEITA DE HAMBURGUER COM FRANGO:\n
-            - pão\n
-            - carne\n
-            - FRANGO DE 300 GRAMAS\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
-
-        <category>
-            <pattern>VEGETARIANO</pattern>
-            <template>
-            RECEITA DE HAMBURGUER COM VERDURAS:\n
-            - pão\n
-            - 1 tomate\n
-            - 1 RUCULA\n
-            - 1 ABACATE\n
-            - MOLHO DE VERDURAS\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
-
-        <category>
-            <pattern>X TUDO</pattern>
+     <category>
+            <pattern>X Tudo</pattern>
             <template>
             RECEITA DE HAMBURGUER COM TUDO:\n
-            - pão\n
-            - 1 carne\n
-            - 2 ovos\n
-            - 2 Bacons\n
-            - 360 gramas de batata palha\n
-            - 320 gramas de frango desfiado\n
-            - 1 Rucula\n
-            - 220 gramas de coração\n
-            - 220 gramas de camarão\n
-            - 1 pote de ketchupe\n
-            - 1 pote de mostarda\n
+            \nIngredientes:\n
+            - 1 pão de hamburguer\n
+            - 1 hamburguer\n
+            - 1 alface\n
+            - 1 tomate\n
+            - 1 ovo\n
+            - 2 fatias mussarela\n
+            - maionese\n
+            - 50g de bacon\n
+            - 2 fatias de presunto\n
+            \nModo de preparo:\n
+            1.Frite o ovo com a gema dura\n
+            2.Frite o bacon.\n
+            3.Corte o pão 2 vezes e passe maionese.\n
+            4.Frite o hambúrguer e monte o lanche\n
+            5.Coloque o ovo frito na fatia de pão, depois 1 fatia de mussarela e presunto sobre o ovo.\n
+            6.Coloque a segunda fatia do pão, o hambúrguer, outra fatia de mussarela, o bacon frito, a última fatia de presunto, o tomate e o alface.\n
+            7.Cubra-o com o pão.\n
+            \nDESEJA VER OUTRA RECEITA?
+            </template>
+        </category>  
+
+        <category>
+            <pattern>X Frango </pattern>
+            <template>
+            RECEITA DE HAMBURGUER DE FRANGO:\n
+            \nIngredientes:\n
+            - 600 g de frango moído \n
+            - 1 cebola ralada \n
+            - 2 colheres (sopa) de farinha de rosca\n
+            - 1 clara de ovo\n
+            - 1 colher (sopa) de mostarda \n
+            - 2 colheres (chá) de azeite \n
+            - sal a gosto \n
+            \nModo de preparo:\n
+            1.Preaqueça o forno a 180ºC (temperatura média)\n
+            2.Se preferir, em vez de comprar o frango moído, bata os 600 g de peito frango desossado e sem a pele no processador de alimentos até obter uma mistura lisa. \n
+            3.Numa tigela, coloque todos os ingredientes, exceto o azeite.\n
+            4.Misture com as mãos até obter uma massa compacta e lisa. Cubra com filme e leve à geladeira por 15 minutos. \n
+            5.Divida a massa em 4 partes. Com as mãos, faça uma bola com cada parte e aperte cada uma para formar hambúrgueres bem redondos. \n
+            6.Leve uma frigideira antiaderente ao fogo médio. Quando aquecer, coloque 1 colher (chá) de azeite e espalhe, girando a frigideira. Coloque dois hambúrgueres e deixe dourar por 3 minutos de cada lado. \n
+            7.Cubra-o com o pão.\n
+            </template>
+        </category>
+
+        <category>
+            <pattern>X Vegetariano</pattern>
+            <template>
+            RECEITA DE HAMBURGUER VEGETARIANO:\n
+             \nIngredientes:\n
+            - 3 cenouras médias descascadas\n
+            - 1 maçã vermelha sem casca\n
+            - 1 ovo\n
+            - 1 cebola pequena picada\n
+            - 2 colheres (sopa) de salsa picada\n
+            - 1 colher (sopa) de farinha de rosca\n
+            - 4 pães de hambúrguer\n
+            - 8 fatias de queijo prato\n
+            - 4 folhas de alface\n
+            - 4 fatias de tomate\n
+            - 2 colheres (sopa) de maionese\n
+            \nModo de preparo:\n
+            1.Rale as cenouras e a maçã no ralo fino\n
+            2.Esprema bem para retirar todo o líquido e coloque numa tigela\n
+            3.Acrescente o ovo, a cebola, a salsa e a farinha de rosca. Tempere com sal e pimenta­do-reino a gosto.\n
+            4.Frite o hambúrguer e monte o lanche\n
+            5.Molde 4 hambúrgueres e passe-os em farinha de rosca.\n
+            6.Em uma frigideira grande antiaderente untada com óleo, frite os hambúrgueres em fogo baixo até dourarem dos dois lados.\n
+            7.Corte os pães ao meio e monte os sanduíches com o hambúrguer, o queijo, a alface, o tomate e a maionese.\n
             \nDESEJA VER OUTRA RECEITA?
             </template>
         </category>
+
+        
 
     </topic>
 
@@ -560,6 +565,7 @@
         <pattern>GOSTARIA DE FAZER UMA COXINHA</pattern>
         <template>
         QUAL TIPO DE COXINHA VOCÊ DESEJA?
+        - Massa de coxinha
             <think>
                 <set name="topic">COXINHA</set>
             </think>
@@ -568,34 +574,30 @@
 
     <topic name="COXINHA">
 
-        <category>
-            <pattern>4 QUEIJOS</pattern>
+<category>
+            <pattern>Massa de coxinha</pattern>
             <template>
-            RECEITA DE COXINHA DE 4 QUEIJOS:\n
-            - FAÇA A MASSA DE UMA COXINHA\n
-            - CRIE COXINHAS COM A MASSA\n
-            - COLOQUE OS QUEIJOS DENTRO DA COXINHA\n
-            - PRE AQUEÇA SEU FOGÃO EM FOGO ALTO DURANTE 15 MINUTOS\n
-            - COLOQUE SUAS COXINHAS NO FOGÃO DURANTE APROXIMADAMENTE 1HORA\n
+             Receita de massa de coxinha:\n
+             \nIngredientes:\n
+            - 2 copos de água\n
+            - 1 colher de margarina\n
+            - sal a gosto\n
+            - 1 copo de leite\n
+            - 1 cubo de caldo de galinha\n
+            - 3 xícaras de trigo\n
+            - oléo para fritar
+            \nModo de preparo:\n
+            1. Coloque a água, o leite, a margarina, o caldo e o sal em uma panela e misture até ferver.\n
+            2. Abaixe o fogo e acrescente o trigo de uma só vez.\n
+            3. Mexa até obter uma massa lisa e homogênea.\n
+            4. Recheie da maneira que preferir.\n
+            5. Frite com oleo 
             \nDESEJA VER OUTRA RECEITA?
             </template>
         </category>
+        
+       
 
-        <category>
-            <pattern>CAMARAO</pattern>
-            <template>
-            RECEITA DE COXINHA CAMARAO:\n
-            - FAÇA A MASSA DE UMA COXINHA\n
-            - CRIE COXINHAS COM A MASSA\n
-            - PEGUE 270 GRAMAS DE CAMARAM\n
-            - DESFIE O CAMARAM\n
-            - LIMPE TODO O COCO DENTRO DELE(OPICIONAL)\n
-            - COLOQUE O CAMARAM NA COXINHA\n
-            - PRE AQUEÇA SEU FOGÃO EM FOGO ALTO DURANTE 15 MINUTOS\n
-            - COLOQUE SUAS COXINHAS NO FOGÃO DURANTE APROXIMADAMENTE 1HORA\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
 
     </topic>
 
@@ -604,6 +606,7 @@
         <pattern>GOSTARIA DE FAZER UM BOLINHO DE ARROZ</pattern>
         <template>
         QUAL TIPO DE BOLINHO DE ARROZ VOCÊ DESEJA?
+        COM QUEIJO
             <think>
                 <set name="topic">BOLINHO DE ARROZ</set>
             </think>
@@ -612,35 +615,25 @@
 
     <topic name="BOLINHO DE ARROZ">
 
-        <category>
-            <pattern>NORMAL</pattern>
-            <template>
-            RECEITA DE BOLINHO DE ARROZ NORMAL:\n
-            - PEGUE O ARROZ DE UM DIA ANTERIOR\n
-            - TEMPERE COM TEMPEROS A VONTADE\n
-            - MOLDE SEUS BOLINHOS\n
-            - PEGUE FARINHA E CLARA DE OVO\n
-            - MERGULE SEUS BOLINHOS NA MISTURA\n
-            - PEGUE UMA PANELA DE FRITAR\n
-            - COLOQUE SEUS BOLINHOS NA FRITADEIRA\n
-            - FIQUE VENDO ATE FICAREM DOURADOS\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
 
         <category>
             <pattern>COM QUEIJO</pattern>
             <template>
-            RECEITA DE BOLINHO DE ARROZ COM QUEIJO:\n
-            - PEGUE O ARROZ DE UM DIA ANTERIOR\n
-            - TEMPERE COM TEMPEROS A VONTADE\n
-            - COLOQUE QUEIJO NO MEIO\n
-            - MOLDE SEUS BOLINHOS\n
-            - PEGUE FARINHA E CLARA DE OVO\n
-            - MERGULE SEUS BOLINHOS NA MISTURA\n
-            - PEGUE UMA PANELA DE FRITAR\n
-            - COLOQUE SEUS BOLINHOS NA FRITADEIRA\n
-            - FIQUE VENDO ATE FICAREM DOURADOS\n
+            Receita de bolinho de arroz com queijo:\n
+            \nIngredientes:\n
+            - 2 xícaras (chá) de arroz cozido\n
+            - 1/2 xícara (chá) de leite\n
+            - 1 colher (sopa) de fermento em pó\n
+            - 1/2 xícara (chá) de farinha de trigo\n
+            - óleo para fritar\n
+            - 1/2 xícara (chá) de queijo ralado\n
+            - 2 colheres (sopa) de cheiro-verde picado\n
+            - 1/2 xícara (chá) de amido de milho\n
+            - 3 ovos\n
+            \nModo de preparo:\n
+            1. Em um recipiente, misture todos os ingredientes até criar uma massa firme e encorpada.\n
+            2. Molde os bolinhos e frite-os no óleo quente, até que fiquem dourados.\n
+            3. Escorra sobre papel absorvente.\n
             \nDESEJA VER OUTRA RECEITA?
             </template>
         </category>
@@ -652,6 +645,7 @@
         <pattern>GOSTARIA DE FAZER UM CACHORRO QUENTE</pattern>
         <template>
         QUAL TIPO DE Cachorro Quente VOCÊ DESEJA?
+        Com Tudo
             <think>
                 <set name="topic">Cachorro Quente</set>
             </think>
@@ -661,58 +655,31 @@
     <topic name="Cachorro Quente">
 
         <category>
-            <pattern>Com batata palha em cima</pattern>
+            <pattern>Com Tudo</pattern>
             <template>
-            RECEITA de \n
-            -------1\n
+            Receita de cachorro quente com tudo:\n
+            \nIngredientes:\n
+            - 1 Salsicha\n
+            - 1 tomate\n
+            - 1 copo de extrato de tomate\n
+            - 1/2 medida do copo de extrato de tomate de água\n
+            - 1 cebola\n
+            - 1 colher de manteiga\n
+            - 1 caixa de creme de leite\n
+            - Batata palha a gosto\n
+            - Ervilha a gosto\n
+            - ketchup,mostarda e maionese a gosto\n
+            - Milho verde a gosto\n
+            \nModo de preparo:\n
+            1. Pique a cebola e o tomate, refogue bem na manteiga.\n
+            2. Acrescente o extrato de tomate, corte a salsicha em rodelas e deixe cozinhar a gosto, se presiso acrescente a medida de água.\n
+            3. Depois de cozinhar bem, acrescente o creme de leite e é so servir.\n
+            4. Acrescente batata palha, milho verde, ervilha, catchup, mostarda e maionese. Fica espetacular!\n
             \nDESEJA VER OUTRA RECEITA?
             </template>
         </category>
 
-        <category>
-            <pattern>Com duas salsichas</pattern>
-            <template>
-            RECEITA de \n
-            -------2\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
-
-        <category>
-            <pattern>Com salsichas vegatarianas</pattern>
-            <template>
-            RECEITA de \n
-            -------2\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
-
-        <category>
-            <pattern>Com ervilha</pattern>
-            <template>
-            RECEITA de \n
-            -------2\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
-
-        <category>
-            <pattern>Com pepino</pattern>
-            <template>
-            RECEITA de \n
-            -------2\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
-
-        <category>
-            <pattern>Com batata doce</pattern>
-            <template>
-            RECEITA de \n
-            -------2\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
+        
 
     </topic>
 
@@ -721,6 +688,11 @@
         <pattern>GOSTARIA DE FAZER UM MACARRAO</pattern>
         <template>
         QUAL TIPO DE Macarão VOCÊ DESEJA?
+        Bolanhesa
+        Aléo e oleo
+        Pesto
+        Carbonara
+
             <think>
                 <set name="topic">Macarão</set>
             </think>
@@ -730,58 +702,98 @@
     <topic name="Macarão">
 
         <category>
-            <pattern>abolonheza</pattern>
+            <pattern>Bolanhesa</pattern>
             <template>
-            RECEITA de \n
-            -------1\n
+           Receita de macarrão a bolanhesa:\n
+           \nIngredientes:\n
+            - 1 Cebola\n
+            - 5 azeitonas verdes picadas\n
+            - 2 Cubos de Caldo de carne ou legumes dissolvidos em 100ml de água\n
+            - 2 tomates picados\n
+            - 500g de Carne Moída\n
+            - 1 colher de sopa de azeite de oliva\n
+            - 2 latas de molho de tomate pronto\n
+            - 1 cenoura\n
+            - 500g de Macarrão\n
+        
+            \nModo de preparo:\n
+            1. Pique a cebola, refogue por alguns minutos em uma panela com óleo quente até dourar a cebola, mexendo para não queimar.\n
+            2. Misture a carne moída, deixe cozinhar por alguns minutos.\n
+            3. Adicione o caldo, o molho, os tomates picados, a cenoura cortada ao meio e mexa bem, deixe cozinhar por aproximadamente 40minutos em fogo baixo com a panela semi tampada. Descarte a cenoura depois que o molho estiver pronto.\n
+            4. Prepare o macarrão, misture o molho ao macarrão e sirva.\n
             \nDESEJA VER OUTRA RECEITA?
             </template>
         </category>
 
         <category>
-            <pattern>Com almondegas</pattern>
+            <pattern>Aléo e oleo</pattern>
             <template>
-            RECEITA de \n
-            -------2\n
+           Receita de macarrão aleo e oleo:\n
+           \nIngredientes:\n
+            - 5 dentes de alho amassados\n
+            - 5 colheres de sopa de óleo\n
+            - 1 colher de sopa de manteiga\n
+            - Sal a gosto\n
+            - 500g de Macarrão\n
+        
+            \nModo de preparo:\n
+            1. Amasse bem o alho juntamente com o sal, formando uma pasta.\n
+            2. Em uma frigideira, coloque o alho amassado e o óleo.\n
+            3. Frite em fogo médio sem deixar o alho queimar, só dourar.\n
+            4. Acrescente a manteiga e deixe ferver um pouco, só para incorporar bem o sabor, mexendo sempre.\n
+            5. Coloque sobre o macarrão imediatamente.\n
             \nDESEJA VER OUTRA RECEITA?
             </template>
         </category>
 
         <category>
-            <pattern>Com carne</pattern>
+            <pattern>Pesto</pattern>
             <template>
-            RECEITA de \n
-            -------2\n
+            Receita de macarrão ao pesto:\n
+           \nIngredientes:\n
+            - 4 xícaras (chá) de água (800 ml)\n
+            - folhas de 1 e meio maço de manjericão\n
+            - meia colher (chá) de sal\n
+            - 1 xícara (chá) de Azeite de Oliva Extra Virgem\n
+            - 3 castanhas-do-pará picadas\n
+            - 1 dente de alho inteiro e sem casca\n
+            - 1 xícara (chá) de queijo parmesão ralado (100 g)\n
+            - 500g de Macarrão\n
+        
+            \nModo de preparo:\n
+            1. Em uma panela pequena, coloque a água e leve ao fogo alto para aquecer. Junte as folhas de manjericão e deixe por 30 segundos. Retire do fogo, escorra a água e esprema as folhas.\n
+            2. No copo do liquidificador, coloque o manjericão aferventado, o sal, o Azeite, a castanha-do-pará, o alho e metade do queijo, e bata em potência média, por 2 minutos, ou até obter um creme\n
+            3. Regue o macarrão, misture e sirva em seguida, com o queijo ralado restante na superfície.\n
             \nDESEJA VER OUTRA RECEITA?
             </template>
         </category>
 
         <category>
-            <pattern>alho e oleo</pattern>
+            <pattern>Carbonara</pattern>
             <template>
-            RECEITA de \n
-            -------2\n
+            Receita de macarrão carbonara:\n
+           \nIngredientes:\n
+            - bacon picado a gosto\n
+            - 3 ovos\n
+            - pimenta-do-reino a gosto\n
+            - creme de leite se quiser dar um toque diferente à receita\n
+            - queijo ralado a gosto\n
+            - sal\n
+            - 500g de Macarrão\n
+        
+            \nModo de preparo:\n
+            1. Frite bem o bacon, até ficar crocante (pode-se adicionar salame picado).\n
+            2. Coloque o macarrão para cozinhar em água e sal.\n
+            3. No refratário onde será servido o macarrão, bata bem os ovos com um garfo.\n
+            4. Tempere com sal e pimenta a gosto, e junte o queijo ralado, também a gosto.\n
+            5. Quando o macarrão estiver pronto, escorra e coloque (bem quente) sobre a mistura de ovos, misture bem.\n
+            6. O calor da massa cozinha os ovos.\n
+            7. Coloque o bacon, ainda quente, sobre o macarrão e sirva.\n
             \nDESEJA VER OUTRA RECEITA?
             </template>
         </category>
 
-        <category>
-            <pattern>carne e almondegas</pattern>
-            <template>
-            RECEITA de \n
-            -------2\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
-
-        <category>
-            <pattern>com legumes</pattern>
-            <template>
-            RECEITA de \n
-            -------2\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
+      
 
     </topic>
 
@@ -790,6 +802,9 @@
         <pattern>GOSTARIA DE FAZER UM FRANGO</pattern>
         <template>
         QUAL TIPO DE Frango VOCÊ DESEJA?
+        Frito
+        Assado
+        Milanesa
             <think>
                 <set name="topic">Frango</set>
             </think>
@@ -799,27 +814,73 @@
     <topic name="Frango">
 
         <category>
-            <pattern>Frango PLUS</pattern>
+            <pattern>Frito</pattern>
             <template>
-            RECEITA 1:\n
+            Receita de peito de frango frito:\n
+           \nIngredientes:\n
+            - 5 filés de frango corte medio, batidos na tábua como se fosse bife\n
+            - 4 cabeças de alho batidas\n
+            - 3 colheres de oleo cheias\n
+            - 1 pitada de pimenta-do-reino caprichada\n
+            - 3 pitadas de salsa\n
+            - 1 pitada de de açafrão\n
+            - 1/2 cabeça de cebola cortada em rodelas\n
+            - Sal a gosto\n
+        
+            \nModo de preparo:\n
+            1. Tempere os filés com o sal a gosto e o alho batido, uns 15 minutos antes de fritar.\n
+            2. Coloque o óleo em uma frigideira e uma pitada de açafrão.\n
+            3. Em seguida os filés de frango e frite-os, virando de um lado para o outro.\n
+            4. Quando estiverem quase dourados coloque a pimenta-do-reino, salsa e a cebola, em toda panela bem espalhada.\n
+            5.Continue virando-os até dourar, assim que dourar apague o fogo e sirva.\n
             \nDESEJA VER OUTRA RECEITA?
             </template>
         </category>
 
         <category>
-            <pattern>Frango amilaneza</pattern>
+            <pattern>Assado</pattern>
             <template>
-            RECEITA de \n
-            -------3\n
+              Receita de sobrecoxa e coxa assado frito:\n
+           \nIngredientes:\n
+            - 2 kg de coxas e sobrecoxas\n
+            - 4 cabeças de alho batidas\n
+            - pimenta-do-reino a gosto\n
+            - 3 folhas de louro picadas\n
+            - sal a gosto\n
+            - 1 pitada de açafrão\n
+            - orégano a gosto\n
+            - 5 colheres de azeite\n
+        
+            \nModo de preparo:\n
+            1. Misture todos os ingredientes com as coxas, Deixe descansando na geladeira por 2 horas.\n
+            2. Arrume as coxas numa assadeira.\n
+            3. Cubra com papel-alumínio.\n
+            4. Leve ao forno por 1 hora e após isso retirar o papel-alumínio.\n
+            5. Deixar por mais meia hora ou até dourar as coxas.\n
             \nDESEJA VER OUTRA RECEITA?
             </template>
         </category>
 
         <category>
-            <pattern>frango frito</pattern>
+            <pattern>Milanesa</pattern>
             <template>
-            RECEITA:\n
-            ---4\n
+            Receita de peito de frango a milanesa:\n
+           \nIngredientes:\n
+            - 1 kg de filés de peito de frango\n
+            - 3 ovos batidos\n
+            - Farinha de trigo\n
+            - Tempero a gosto (sal, pimenta, limão, etc)\n
+            - Farinha de rosca\n
+        
+        
+            \nModo de preparo:\n
+            1. Tempere os filés de frango.\n
+            2. Em outro recipiente (prato) bata os ovos.\n
+            3. Em outro prato coloque a farinha de rosca.\n
+            4. E em um terceiro prato, o trigo.\n
+            5. Em seguida, pegue os filés já temperados e passe-os na farinha de trigo, nos ovos batidos e, por último, passe na farinha de rosca.\n
+            6. Frite os filés mergulhando em óleo, em fogo médio até que fiquem dourados.\n
+            7. Depois de fritos, coloque-os em papel absorvente para absorver a gordura em excesso.\n
             \nDESEJA VER OUTRA RECEITA?
             </template>
         </category>
