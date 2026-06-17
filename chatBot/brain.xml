@@ -9,27 +9,30 @@
         </template>
     </category>
 
-    <category>
-        <pattern>SIM</pattern>
-        <template>Otimo! Para ver outra receita.
-    
-            DIGITE: Gostaria de fazer:\n
-                - uma entrada\n
-                - um hamburguer \n
-                - um ovo\n
-                - um bolinho de arroz\n
-                - uma coxinha\n
-                - uma pizza\n
-                - uma sobremesa\n
-                - uma comida mexicana\n
-                - uma bebida\n
-
-                Bebidas
-                - um drink\n
-
-                \nDESEJA VER OUTRA RECEITA?
-        </template>
-    </category>
+<category>
+    <pattern>SIM</pattern>
+    <template>Ótimo! Escolha uma nova receita digitando:\n
+        \n--- PRATOS PRINCIPAIS ---\n
+        - um hamburguer\n
+        - um ovo\n
+        - um bolinho de arroz\n
+        - uma coxinha\n
+        - uma pizza\n
+        - um porco\n
+        - um macarrao\n
+        - um frango\n
+        - uma empada\n
+        \n--- ENTRADAS E SALADAS ---\n
+        - uma entrada\n
+        - uma comida vegetariana\n
+        \n--- SOBREMESAS E BEBIDAS ---\n
+        - uma sobremesa\n
+        - uma bebida\n
+        - um drink\n
+        \n--- COMIDA MEXICANA ---\n
+        - uma comida mexicana\n
+    </template>
+</category>
 
 
     <category>
@@ -602,16 +605,18 @@
     </topic>
 
 #BOLINHO DE AROZ ---------------------------------------------------------------------------------------------------------------------------------------------
-    <category>
-        <pattern>GOSTARIA DE FAZER UM BOLINHO DE ARROZ</pattern>
-        <template>
-        QUAL TIPO DE BOLINHO DE ARROZ VOCÊ DESEJA?
-        COM QUEIJO
-            <think>
-                <set name="topic">BOLINHO DE ARROZ</set>
-            </think>
-        </template>
-    </category>
+<category>
+    <pattern>GOSTARIA DE FAZER UM BOLINHO DE ARROZ</pattern>
+    <template>
+        QUAL TIPO DE BOLINHO DE ARROZ VOCÊ DESEJA?\n
+        - Com queijo\n
+        - Sem queijo\n
+        - Com bacon\n
+        <think>
+            <set name="topic">BOLINHO DE ARROZ</set>
+        </think>
+    </template>
+</category>
 
     <topic name="BOLINHO DE ARROZ">
 
@@ -641,16 +646,16 @@
     </topic>
 
 #Cachorro Quente ---------------------------------------------------------------------------------------------------------------------------------------------
-    <category>
-        <pattern>GOSTARIA DE FAZER UM CACHORRO QUENTE</pattern>
-        <template>
-        QUAL TIPO DE Cachorro Quente VOCÊ DESEJA?
-        Com Tudo
-            <think>
-                <set name="topic">Cachorro Quente</set>
-            </think>
-        </template>
-    </category>
+<category>
+    <pattern>GOSTARIA DE FAZER UM CACHORRO QUENTE</pattern>
+    <template>
+        QUAL TIPO DE CACHORRO QUENTE VOCÊ DESEJA?\n
+        - Com tudo\n
+        <think>
+            <set name="topic">CACHORRO QUENTE</set>
+        </think>
+    </template>
+</category>
 
     <topic name="Cachorro Quente">
 
@@ -684,20 +689,19 @@
     </topic>
 
 #Macarão ---------------------------------------------------------------------------------------------------------------------------------------------
-    <category>
-        <pattern>GOSTARIA DE FAZER UM MACARRAO</pattern>
-        <template>
-        QUAL TIPO DE Macarão VOCÊ DESEJA?
-        Bolanhesa
-        Aléo e oleo
-        Pesto
-        Carbonara
-
-            <think>
-                <set name="topic">Macarão</set>
-            </think>
-        </template>
-    </category>
+<category>
+    <pattern>GOSTARIA DE FAZER UM MACARRAO</pattern>
+    <template>
+        QUAL TIPO DE MACARRÃO VOCÊ DESEJA?\n
+        - Bolonhesa\n
+        - Alho e óleo\n
+        - Pesto\n
+        - Carbonara\n
+        <think>
+            <set name="topic">MACARRÃO</set>
+        </think>
+    </template>
+</category>
 
     <topic name="Macarão">
 
@@ -798,18 +802,18 @@
     </topic>
 
 # Frango ---------------------------------------------------------------------------------------------------------------------------------------------
-    <category>
-        <pattern>GOSTARIA DE FAZER UM FRANGO</pattern>
-        <template>
-        QUAL TIPO DE Frango VOCÊ DESEJA?
-        Frito
-        Assado
-        Milanesa
-            <think>
-                <set name="topic">Frango</set>
-            </think>
-        </template>
-    </category>
+<category>
+    <pattern>GOSTARIA DE FAZER UM FRANGO</pattern>
+    <template>
+        QUAL TIPO DE FRANGO VOCÊ DESEJA?\n
+        - Frito\n
+        - Assado\n
+        - Milanesa\n
+        <think>
+            <set name="topic">FRANGO</set>
+        </think>
+    </template>
+</category>
 
     <topic name="Frango">
 
@@ -928,99 +932,231 @@
 
     </topic>
 
-# Porco ---------------------------------------------------------------------------------------------------------------------------------------------
+# PORCO ---------------------------------------------------------------------------------------------------------------------------------------------
+<category>
+    <pattern>GOSTARIA DE FAZER UM PORCO</pattern>
+    <template>
+        QUAL TIPO DE PORCO VOCÊ DESEJA?\n
+        - Porco plus\n
+        - Porco com bacon\n
+        - Porco com batatas\n
+        <think>
+            <set name="topic">Porco</set>
+        </think>
+    </template>
+</category>
+
+<topic name="Porco">
+
     <category>
-        <pattern>GOSTARIA DE FAZER UM PORCO</pattern>
+        <pattern>PORCO PLUS</pattern>
         <template>
-        QUAL TIPO DE Porco VOCÊ DESEJA?
-            <think>
-                <set name="topic">Porco</set>
-            </think>
+        RECEITA de Porco plus (Lombo assado com ervas)\n
+
+        INGREDIENTES:\n
+        - 1 peça de lombo suíno (cerca de 1,5kg)\n
+        - 4 dentes de alho amassados\n
+        - Suco de 1 limão\n
+        - 2 colheres de sopa de azeite\n
+        - 1 colher de sopa de sal\n
+        - 1 colher de chá de pimenta-do-reino\n
+        - 1 colher de sopa de alecrim fresco picado\n
+        - 1 colher de sopa de tomilho fresco picado\n
+        - 1 cebola grande cortada em rodelas\n
+        - 1 xícara de vinho branco seco\n
+
+        MODO DE PREPARO:\n
+        1. Tempere o lombo com alho, limão, azeite, sal, pimenta, alecrim e tomilho.\n
+        2. Deixe marinar por pelo menos 2 horas na geladeira.\n
+        3. Preaqueça o forno a 200°C.\n
+        4. Coloque a cebola no fundo de uma assadeira e posicione o lombo por cima.\n
+        5. Regue com o vinho branco.\n
+        6. Asse por aproximadamente 40 minutos, regando com o próprio molho a cada 10 minutos.\n
+        7. Sirva fatiado com o molho da assadeira.\n
+        \nDESEJA VER OUTRA RECEITA?
         </template>
     </category>
 
-    <topic name="Porco">
+    <category>
+        <pattern>PORCO COM BACON</pattern>
+        <template>
+        RECEITA de Porco com bacon (Filé mignon suíno envolto em bacon)\n
 
-        <category>
-            <pattern>Porco PLUS</pattern>
-            <template>
-            RECEITA 1:\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
+        INGREDIENTES:\n
+        - 4 bifes de filé mignon suíno\n
+        - 12 fatias de bacon\n
+        - Sal e pimenta a gosto\n
+        - 1 colher de sopa de manteiga\n
+        - 1 cebola picada\n
+        - 2 dentes de alho picados\n
+        - 1 xícara de vinho tinto seco\n
+        - 1 xícara de caldo de carne\n
+        - 1 colher de sopa de farinha de trigo\n
 
-        <category>
-            <pattern>Porco com Bacon</pattern>
-            <template>
-            RECEITA de \n
-            -------3\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
+        MODO DE PREPARO:\n
+        1. Tempere os bifes com sal e pimenta.\n
+        2. Enrole cada bife com 3 fatias de bacon e prenda com palitos.\n
+        3. Em uma frigideira grande, derreta a manteiga em fogo médio.\n
+        4. Doure os bifes por 3-4 minutos de cada lado. Reserve.\n
+        5. Na mesma frigideira, refogue a cebola e o alho até murcharem.\n
+        6. Polvilhe a farinha e mexa bem.\n
+        7. Acrescente o vinho e o caldo de carne, mexendo até engrossar.\n
+        8. Volte os bifes à frigideira e cozinhe por mais 10 minutos com a panela tampada.\n
+        9. Retire os palitos antes de servir.\n
+        \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
 
-        <category>
-            <pattern>Porco com batatas</pattern>
-            <template>
-            RECEITA:\n
-            ---4\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
+    <category>
+        <pattern>PORCO COM BATATAS</pattern>
+        <template>
+        RECEITA de Porco com batatas (Costelinha assada com batatas)\n
 
-    </topic>
+        INGREDIENTES:\n
+        - 1,5kg de costelinha suína\n
+        - 1kg de batatas descascadas e cortadas em cubos\n
+        - 4 dentes de alho amassados\n
+        - Suco de 2 limões\n
+        - 3 colheres de sopa de azeite\n
+        - 1 colher de sopa de sal\n
+        - 1 colher de chá de páprica defumada\n
+        - 1 colher de chá de pimenta calabresa\n
+        - 1 xícara de cerveja escura\n
+        - Alecrim a gosto\n
 
+        MODO DE PREPARO:\n
+        1. Tempere a costelinha com alho, limão, azeite, sal, páprica e pimenta calabresa.\n
+        2. Deixe marinar por 3 horas na geladeira.\n
+        3. Preaqueça o forno a 180°C.\n
+        4. Em uma assadeira grande, coloque a costelinha e as batatas.\n
+        5. Regue com a cerveja e salpique alecrim.\n
+        6. Cubra com papel alumínio e asse por 1 hora.\n
+        7. Retire o papel alumínio e aumente a temperatura para 200°C.\n
+        8. Asse por mais 30 minutos até dourar.\n
+        9. Sirva com as batatas assadas.\n
+        \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+</topic>
 
 # VEGETARIANO ---------------------------------------------------------------------------------------------------------------------------------------------
+<category>
+    <pattern>GOSTARIA DE FAZER UMA COMIDA VEGETARIANA</pattern>
+    <template>
+        QUAL TIPO DE COMIDA VEGETARIANA VOCÊ DESEJA?\n
+        - Salada plus\n
+        - Salada de fruta\n
+        - Salada com sazon\n
+        <think>
+            <set name="topic">Vegetariana</set>
+        </think>
+    </template>
+</category>
+
+<topic name="Vegetariana">
+
     <category>
-        <pattern>GOSTARIA DE FAZER UMA Comida VEGETARIANA</pattern>
+        <pattern>SALADA PLUS</pattern>
         <template>
-        QUAL TIPO DE Comida Vegetariana VOCÊ DESEJA?
-            <think>
-                <set name="topic">Vegetariana</set>
-            </think>
+        RECEITA de Salada plus (Salada completa com grão-de-bico e abacate)\n
+
+        INGREDIENTES:\n
+        - 1 xícara de grão-de-bico cozido\n
+        - 1 abacate maduro picado\n
+        - 1 tomate picado\n
+        - 1 pepino picado\n
+        - 1/2 cebola roxa fatiada\n
+        - 1 xícara de folhas de rúcula\n
+        - Suco de 1 limão\n
+        - 3 colheres de sopa de azeite\n
+        - Sal e pimenta a gosto\n
+        - 1 colher de sopa de sementes de gergelim\n
+
+        MODO DE PREPARO:\n
+        1. Em uma tigela grande, misture o grão-de-bico, abacate, tomate, pepino, cebola e rúcula.\n
+        2. Tempere com limão, azeite, sal e pimenta.\n
+        3. Misture delicadamente para não amassar o abacate.\n
+        4. Salpique as sementes de gergelim por cima.\n
+        5. Sirva imediatamente.\n
+        \nDESEJA VER OUTRA RECEITA?
         </template>
     </category>
 
-    <topic name="Vegetariana">
+    <category>
+        <pattern>SALADA DE FRUTA</pattern>
+        <template>
+        RECEITA de Salada de fruta (Salada de frutas com hortelã)\n
 
-        <category>
-            <pattern>Salada PLUS</pattern>
-            <template>
-            RECEITA 1:\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
+        INGREDIENTES:\n
+        - 1 manga picada\n
+        - 1 xícara de morangos picados\n
+        - 1 banana fatiada\n
+        - 1 kiwi picado\n
+        - 1/2 mamão picado\n
+        - Suco de 1 laranja\n
+        - 1 colher de sopa de mel\n
+        - Folhas de hortelã fresca\n
+        - 1 colher de sopa de gengibre ralado (opcional)\n
 
-        <category>
-            <pattern>Salada de fruta</pattern>
-            <template>
-            RECEITA de \n
-            -------3\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
+        MODO DE PREPARO:\n
+        1. Em uma tigela grande, coloque todas as frutas picadas.\n
+        2. Em um recipiente separado, misture o suco de laranja, o mel e o gengibre.\n
+        3. Despeje o molho sobre as frutas e misture delicadamente.\n
+        4. Decore com folhas de hortelã.\n
+        5. Leve à geladeira por 30 minutos antes de servir.\n
+        \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
 
-        <category>
-            <pattern>Salada com sazon</pattern>
-            <template>
-            RECEITA:\n
-            ---4\n
-            \nDESEJA VER OUTRA RECEITA?
-            </template>
-        </category>
+    <category>
+        <pattern>SALADA COM SAZON</pattern>
+        <template>
+        RECEITA de Salada com sazon (Salada de legumes com sazon e iogurte)\n
 
-    </topic>
+        INGREDIENTES:\n
+        - 1 cenoura ralada\n
+        - 1 beterraba ralada\n
+        - 1 xícara de repolho roxo picado\n
+        - 1 maçã verde picada\n
+        - 1/2 xícara de passas\n
+        - 1/2 xícara de nozes picadas\n
+        - 1 pote de iogurte natural (170g)\n
+        - Suco de 1/2 limão\n
+        - 1 colher de sopa de sazon (tempero verde)\n
+        - Sal a gosto\n
+
+        MODO DE PREPARO:\n
+        1. Em uma tigela, misture cenoura, beterraba, repolho, maçã, passas e nozes.\n
+        2. Em outro recipiente, misture o iogurte, o limão, o sazon e o sal.\n
+        3. Despeje o molho sobre a salada e misture bem.\n
+        4. Deixe descansar por 15 minutos para os sabores se integrarem.\n
+        5. Sirva em temperatura ambiente.\n
+        \nDESEJA VER OUTRA RECEITA?
+        </template>
+    </category>
+
+</topic>
 
 #Sobremesas ---------------------------------------------------------------------------------------------------------------------------------------------
-    <category>
-        <pattern>GOSTARIA DE FAZER UMA SOBREMESA</pattern>
-        <template>
-        QUAL TIPO DE SOBREMESSA VOCÊ DESEJA?
-            <think>
-                <set name="topic">SOBREMESAS</set>
-            </think>
-        </template>
-    </category>
+<category>
+    <pattern>GOSTARIA DE FAZER UMA SOBREMESA</pattern>
+    <template>
+        QUAL TIPO DE SOBREMESA VOCÊ DESEJA?\n
+        - Pudim\n
+        - Brownie\n
+        - Sorvete\n
+        - Bolo\n
+        - Mousse de maracujá\n
+        - Pavê\n
+        - Brigadeiro\n
+        - Cheesecake\n
+        - Torta de limão\n
+        <think>
+            <set name="topic">SOBREMESAS</set>
+        </think>
+    </template>
+</category>
 
     <topic name="SOBREMESAS">
 
