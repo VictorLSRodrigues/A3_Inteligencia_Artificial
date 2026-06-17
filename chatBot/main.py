@@ -24,7 +24,7 @@ kb = sys.argv[1]
 k = aiml.Kernel()
 k.learn(kb)
 
-print ("Deseja abrir o Livro de receita/")
+print ("Deseja abrir o Livro de receita?")
 
 while True:
     message = input("> ")
