@@ -12,6 +12,7 @@
 <category>
     <pattern>SIM</pattern>
     <template>Ótimo! Escolha uma nova receita digitando:\n
+        Eu gostaria de 
         \n--- PRATOS PRINCIPAIS ---\n
         - um hamburguer\n
         - um ovo\n
@@ -1194,18 +1195,18 @@
             - Preparação da Calda: Em uma Panela, coloque 1 xícara açucar ao poucos na panela com o fogo baixo
             até derreter e formar um caramelo. Acrescente a 200ml água quente aos poucos, mexendo com cuidado até dissolver tudo
             despeje a calda na forma de pudim e espalhe bem no fundo e nas laterais.\n
-            RECEITA DE PUDIM
+            RECEITA DE PUDIM\n
 
-            INGREDIENTES:
+            INGREDIENTES:\n
             - 1 xícara de açúcar (para a calda)\n
             - 200 ml de água quente\n
             - 1 lata de leite condensado\n
             - 2 medidas da lata de leite\n
             - 3 ovos\n
 
-            MODO DE PREPARO:
+            MODO DE PREPARO:\n
 
-            Calda:
+            Calda:\n
             1. Em uma panela, coloque 1 xícara de açúcar em fogo baixo.\n
             2. Mexa até derreter e formar um caramelo.\n
             3. Acrescente 200 ml de água quente aos poucos, mexendo até dissolver completamente.\n
@@ -1221,10 +1222,10 @@
         </category>
 
         <category>
-            <pattern>brownie</pattern>
+            <pattern>BROWNIE</pattern>
             <template>
-            RECEITA de brownie:
-            INGREDIENTES:
+            RECEITA de brownie:\n
+            INGREDIENTES:\n
             - 200g de chocolate meio amargo\n
             - 100g de manteiga\n
             - 3 ovos\n
@@ -1299,14 +1300,14 @@
 <category>
     <pattern>MOUSSE DE MARACUJA</pattern>
     <template>
-        RECEITA DE MOUSSE DE MARACUJÁ
+        RECEITA DE MOUSSE DE MARACUJÁ\n
 
-        INGREDIENTES:
+        INGREDIENTES:\n
         - 1 lata de leite condensado\n
         - 1 caixa de creme de leite\n
         - 1 xícara de suco concentrado de maracujá\n
 
-        MODO DE PREPARO:
+        MODO DE PREPARO:\n
         1. Coloque todos os ingredientes no liquidificador.\n
         2. Bata por aproximadamente 3 minutos.\n
         3. Despeje em uma travessa ou taças.\n
@@ -1344,9 +1345,9 @@
 <category>
     <pattern>BRIGADEIRO</pattern>
     <template>
-        RECEITA DE BRIGADEIRO
+        RECEITA DE BRIGADEIRO\n
 
-        INGREDIENTES:
+        INGREDIENTES:\n
         - 1 lata de leite condensado\n
         - 1 colher de sopa de manteiga\n
         - 4 colheres de sopa de chocolate em pó\n
@@ -1359,7 +1360,7 @@
         4. Deixe esfriar.\n
         5. Enrole os brigadeiros e passe no granulado.\n
 
-        DESEJA VER OUTRA RECEITA?
+        \nDESEJA VER OUTRA RECEITA?
     </template>
 </category>
 
@@ -1383,16 +1384,16 @@
         5. Leve à geladeira por pelo menos 6 horas.\n
         6. Sirva gelado.\n
 
-        DESEJA VER OUTRA RECEITA?
+        \nDESEJA VER OUTRA RECEITA?
     </template>
 </category>
 
 <category>
     <pattern>TORTA DE LIMAO</pattern>
     <template>
-        RECEITA DE TORTA DE LIMÃO
+        RECEITA DE TORTA DE LIMÃO\n
 
-        INGREDIENTES:
+        INGREDIENTES:\n
         - 200g de biscoito triturado\n
         - 100g de manteiga derretida\n
         - 1 lata de leite condensado\n
@@ -1407,7 +1408,7 @@
         5. Leve à geladeira por pelo menos 4 horas.\n
         6. Sirva gelado.\n
 
-        DESEJA VER OUTRA RECEITA?
+        \nDESEJA VER OUTRA RECEITA?
     </template>
 </category>
 
@@ -1423,9 +1424,13 @@
 
         \nDeseja ver outra receita?
     </template>
+     <think>
+            <set name="topic">DRINKS</set>
+        </think>
 </category>
 
 <topic name="DRINKS">
+
     <category>
         <pattern>ALCOOLICO</pattern>
         <template>
@@ -1436,6 +1441,9 @@
             - Cerveja\n
             \nDeseja ver outra receita?
         </template>
+             <think>
+            <set name="topic">ALCOOLICO</set>
+        </think>
     </category>
 
     <category>
@@ -1448,9 +1456,14 @@
             - Milkshake\n
             \nDeseja ver outra receita?
         </template>
+                     <think>
+            <set name="topic">NAO ALCOOLICO</set>
+        </think>
     </category>
 
+<topic name="ALCOOLICO">
     <category>
+
         <pattern>CAIPIRINHA</pattern>
         <template>
             Receita da Caipirinha:\n
@@ -1520,6 +1533,9 @@
         </template>
     </category>
 
+    </topic>
+<topic name="NAO ALCOOLICO">
+
     <category>
         <pattern>SUCO DE LARANJA</pattern>
         <template>
@@ -1586,6 +1602,7 @@
             \nDeseja ver outra receita?
         </template>
     </category>
+</topic>
 </topic>
 
 #Error
